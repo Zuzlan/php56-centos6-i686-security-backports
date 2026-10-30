@@ -1,0 +1,68 @@
+[
+  {
+    "name": "libzip5",
+    "version_release": "1.7.3-1.el6.remi",
+    "license": "BSD",
+    "sourcerpm": "libzip5-1.7.3-1.el6.remi.src.rpm",
+    "url": "https://libzip.org/",
+    "rpm": "libzip5-1.7.3-1.el6.remi.i686.rpm",
+    "documents": [
+      "usr/share/doc/libzip5-1.7.3/LICENSE"
+    ]
+  },
+  {
+    "name": "php-pecl-jsonc",
+    "version_release": "1.3.10-2.el6.remi.5.6",
+    "license": "PHP and MIT and Public Domain",
+    "sourcerpm": "php-pecl-jsonc-1.3.10-2.el6.remi.5.6.src.rpm",
+    "url": "http://pecl.php.net/package/jsonc",
+    "rpm": "php-pecl-jsonc-1.3.10-2.el6.remi.5.6.i686.rpm",
+    "documents": [
+      "usr/share/doc/pecl/json/CREDITS",
+      "usr/share/doc/pecl/json/INSTALL",
+      "usr/share/doc/pecl/json/LICENSE",
+      "usr/share/doc/pecl/json/README.md",
+      "usr/share/doc/pecl/json/json-c/AUTHORS",
+      "usr/share/doc/pecl/json/json-c/COPYING"
+    ]
+  },
+  {
+    "name": "php-pecl-jsonc-devel",
+    "version_release": "1.3.10-2.el6.remi.5.6",
+    "license": "PHP and MIT and Public Domain",
+    "sourcerpm": "php-pecl-jsonc-1.3.10-2.el6.remi.5.6.src.rpm",
+    "url": "http://pecl.php.net/package/jsonc",
+    "rpm": "php-pecl-jsonc-devel-1.3.10-2.el6.remi.5.6.i686.rpm",
+    "documents": []
+  },
+  {
+    "name": "php-pecl-zip",
+    "version_release": "1.19.2-1.el6.remi.5.6",
+    "license": "PHP",
+    "sourcerpm": "php-pecl-zip-1.19.2-1.el6.remi.5.6.src.rpm",
+    "url": "https://pecl.php.net/package/zip",
+    "rpm": "php-pecl-zip-1.19.2-1.el6.remi.5.6.i686.rpm",
+    "documents": [
+      "usr/share/doc/pecl/zip/CREDITS",
+      "usr/share/doc/pecl/zip/LICENSE",
+      "usr/share/doc/pecl/zip/examples/addglob.php",
+      "usr/share/doc/pecl/zip/examples/addpattern.php",
+      "usr/share/doc/pecl/zip/examples/comment.php",
+      "usr/share/doc/pecl/zip/examples/create.php",
+      "usr/share/doc/pecl/zip/examples/dir.php",
+      "usr/share/doc/pecl/zip/examples/encryption.php",
+      "usr/share/doc/pecl/zip/examples/extract.php",
+      "usr/share/doc/pecl/zip/examples/extractAll.php",
+      "usr/share/doc/pecl/zip/examples/fopen.php",
+      "usr/share/doc/pecl/zip/examples/get_set_comments.php",
+      "usr/share/doc/pecl/zip/examples/odt.php",
+      "usr/share/doc/pecl/zip/examples/oldapi.php",
+      "usr/share/doc/pecl/zip/examples/set_compression.php",
+      "usr/share/doc/pecl/zip/examples/test.zip",
+      "usr/share/doc/pecl/zip/examples/test1.zip",
+      "usr/share/doc/pecl/zip/examples/test_with_comment.zip",
+      "usr/share/doc/pecl/zip/examples/too.php",
+      "usr/share/doc/pecl/zip/examples/zipcmd.php"
+    ]
+  }
+]

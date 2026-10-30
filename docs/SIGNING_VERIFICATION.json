@@ -1,0 +1,291 @@
+{
+  "fingerprint": "B07748530C39253A9E8520F56100DD2FE34B4B53",
+  "algorithm": "RSA-4096/SHA256",
+  "expires_utc": "2029-10-28",
+  "host_verifier": "RPM version 4.18.2",
+  "legacy_verifier": {
+    "version": "RPM version 4.8.0",
+    "platform": "EL6 i686",
+    "image": "sha256:8ddb05da0277bba8d58b03e8d145e6a610ea1e9464e04da12577e07e614e4fc7",
+    "status": "PASS",
+    "packages_verified": 34,
+    "header_and_payload_signatures_verified": 68,
+    "output_sha256": "d731293f1155e86750a9c86176c0fa37434eef426239d3966de00171146aa06b"
+  },
+  "packages": [
+    {
+      "path": "dist/RPMS/i686/php-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "1e8b8edb21901c92be331a7fdcf9d812be5981dce016f852c24f536be44c9a5e",
+      "signed_sha256": "af43c798c856f773e70dab1fa00a1087d84f98dacf14dcd09ef11a47fd79acaa",
+      "main_header_and_compressed_payload_sha256": "61049750a9510f306fc14b12def496dbe6884e74d0fbaee12b9fe8f2d6690297",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-bcmath-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "1ade9ef90b65d04d52020c8582d7d1056955e8780ff58596feb6001566923776",
+      "signed_sha256": "b4e6fdcf95aaf8639dff755ab2184113a3f0ea2fca8764464eccb9ed77a04a77",
+      "main_header_and_compressed_payload_sha256": "7715daa484a12272adef774023b6a603c9345f0453562f8a15c880a81273c97e",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-cli-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "efe9a426f0d70c50ceb32bc479fdf27bdd6e94b0dcd3ee772fad247fae5e1f54",
+      "signed_sha256": "46f7330881fc75cde4fb71dcbe4f511458e635b29043e4998a50ba359044af4a",
+      "main_header_and_compressed_payload_sha256": "89c6f0bd84ba78e11aa4bbdae3ae685ef3700ff15d525603bc1b504118e3bf04",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-common-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "d7c9f1557dd3ee5da70c5d683d42ec0f8870ca5db8ff732d8a1d0520938715ba",
+      "signed_sha256": "63bbb7e8076480f8c2d99e7136cdda89bd2c9b7b1c763e41c5a2cb4d534dfe59",
+      "main_header_and_compressed_payload_sha256": "ad3d5a471edb0148d52801dec4e7d0291fc7be65f3be7e04318ff396ce6809df",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-dba-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "05d4b083b840f9015b5fc98825a7abf78fc3a1181ea39634be1257aed338d752",
+      "signed_sha256": "cea04e3b411f1d2a5ca8a9cefd5b843b8d626b7c8d9e0b1599d204fe8f6e42ca",
+      "main_header_and_compressed_payload_sha256": "713f07c0fa50ee5e28959d9018d0e03fdc6daa86ce012a3056878069cac34542",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-dbg-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "85f13dbd9ee890b9a6621279131d172c866933fa5118b04a5ad5323b7c94a2ba",
+      "signed_sha256": "b796490e43d1ea7804dd1ada960b6897fc7f7f1ed34e7d8895e2b9a7f60aa269",
+      "main_header_and_compressed_payload_sha256": "66c8aeb6ed2faf32842a8a566fa73e70010819d4dad8314baf417539262e6155",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-devel-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "c5a99f1c22720dfd3ceac5d8db5fa1bd67d456872d1721a113f78b012e598bec",
+      "signed_sha256": "a1613b2b26938c723d3f46bb54418f875f1b0477a1adea4911d8ef7cc9390824",
+      "main_header_and_compressed_payload_sha256": "168e7c078c0b14927d1dbed18e1f604f598eb7f1550383210ea5c5578920370c",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-embedded-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "dbe5f54b9885f01d56e455298c6b5ad869b915275e62576e655dad7411b43369",
+      "signed_sha256": "621f5c3357cccb6213af3328acfbe6bd8f975e413547947f472e0a9fae4d8c7a",
+      "main_header_and_compressed_payload_sha256": "0fed29ca3af3339b576155044f5d54aa9373cf52a851c60620051d4b329c0ab3",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-enchant-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "9ec20f05b595d2a042a06b0196807409133ac7b42a90dea22b8228e47675ecf2",
+      "signed_sha256": "0eb3bdc81e9e9964c4b7a0026cd023eb9eef9d10fbc227cb13900bf33e91de18",
+      "main_header_and_compressed_payload_sha256": "ff2caddfc5404015da2ac8cc6434729206cf65831e0f7bf47828165fb27015b8",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-fpm-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "284e82ad7ae707d376ed64ebd8618acd86ba383444c3b5804b258737c18c30fd",
+      "signed_sha256": "23fd4fa404b678d6b326432c8116fde6cc731fbd345a38e8799bc9e3b3366fdd",
+      "main_header_and_compressed_payload_sha256": "b35c9b71529c3fa8c5b7360cdfeaeb4029ca050346a8a8eaa63a60c3cbbdee75",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-gd-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "7ecbcc69e412cb09ad18cdd41e8c5528ff0b3148e4a3d2b715cfa7956ab32d26",
+      "signed_sha256": "141b119e8285da6229fc91675f4ec37c9a41fd1e82743a3d2ac8d33e06d7421b",
+      "main_header_and_compressed_payload_sha256": "2bef240671fded23b0b5b1be02af4099dcefd2585b32ad13bf5b4c2ae69cf3d1",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-gmp-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "9fbbd3c48be0cf2d10c39ef5deb20d89c717653158fdd19bbdc62f0daad49e84",
+      "signed_sha256": "698dbfa11d267a944188358183ba17dff34a217948de14e78e965d03a8b8677a",
+      "main_header_and_compressed_payload_sha256": "894c0aebb87a2094ecbeb4ca073b0d3ddca9d522334f9de61e5b7e8eb1525089",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-imap-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "0e5a98cb0bfa28b1fb0298f5a62f2ce264f993c0e1d85daa1cdaf27729d36a10",
+      "signed_sha256": "7ec1f1fe32e8ee0061559b18ef3db34da96a8e3fb786c847d6b22799102d02d9",
+      "main_header_and_compressed_payload_sha256": "c332406f973bce94da323c5dbcfb649282dfb620544dbe17907431d988fa50ab",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-interbase-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "c6dd6716b5d614469a0d05f381bafff741682a3ead0e6d6be0836bffffcbd967",
+      "signed_sha256": "fe9235ef025c0b613fc449a0f1339d6babfd1534a85f72c0be4eb56da8b227b3",
+      "main_header_and_compressed_payload_sha256": "3c37f62560e8f6b2adff2a91bb65cd9cd976de227804fb7b3ef525c2f8f9cf49",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-intl-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "a9caf57b5b740887f84060b20af9143f37e67d67bd386a03a61c14e7376b23a1",
+      "signed_sha256": "187d308369ad9ab6d2b14bd0cbd9c494871384e2c50524b5d5b86073fcd97fe3",
+      "main_header_and_compressed_payload_sha256": "fbcb632f15eb736a85eec33b47bb475a673da034eddea8ab168d4c0b84162f6b",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-ldap-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "620cfbfaeaff40f6eff94770db6e5bab0db570e0383c8da41794e28252f29f8a",
+      "signed_sha256": "4e844a918144896088f71bf89c0452ed51515510d793cfa269b1853074c5e8e0",
+      "main_header_and_compressed_payload_sha256": "dd8b0d4b0be781cdb5b23547c8d29c779487d139caae60d54948fc001279a90d",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-litespeed-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "193d22e6db817841023af6fbbd5c02290e69b30c19c185e5feacc84cadd0263e",
+      "signed_sha256": "3876fbf2040d3b3040daefecb80bcf5e828d6e4f6dc81c989efbee18b8673729",
+      "main_header_and_compressed_payload_sha256": "bd13db1c4b6dd1cfea97666734dfdccbd48c162dc355e3d3b3ac2f2e19ab15e2",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-mbstring-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "d52efda7103a34afd8cda2e4a8620d0328d9625d99f5b69779df59e9d73c1fcb",
+      "signed_sha256": "e99b83c0c02e33ad5463794882e4d2ab6cf5b00a6d664f28d928fe98d759105f",
+      "main_header_and_compressed_payload_sha256": "a7b8d0d73653204c1fd589119416d32b7a2375ad7ef9eb09fd1f5accb599a31c",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-mcrypt-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "103d129ed647a4b7b05aad9333bbb272fe8517f90cf9e2ba97e1e65c19417804",
+      "signed_sha256": "7c063b2b14775d2bbd503cf522d44be11e9b59cf8f30131a29ee38cd3d5bacb1",
+      "main_header_and_compressed_payload_sha256": "a461ef3f0cad5df0dddab244fa16ba5cd68ced7fd940808be57e94c5c4bfd20e",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-mssql-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "573855f7151b4f92e9431e3b6045a1c20974b24f5c7f0107456e6931a0038e6a",
+      "signed_sha256": "65b521b86d1f27b8ff9cbbb16beb33feef5e5fc4cf78c67f143aae13f5413522",
+      "main_header_and_compressed_payload_sha256": "a8c515b95e909d448f6f4d0ddf8859f191cbcf766ac97102d1d6aada60c24cb3",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-mysqlnd-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "7bcbd203def2a3b1f5118a784ad927529fd2d04348311ed04fede0c863c72e11",
+      "signed_sha256": "6c622838d514f17ea6c0bf55e4bbfe2027d1bf80d078974f7d6530c68097a588",
+      "main_header_and_compressed_payload_sha256": "31f00fca81be9fe54c7286ad7e53de37ae4e0428fd0933c6c41b80fb7899a343",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-odbc-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "cce0a18e51eeef31eef12d73b75534654b3774abb08d0bc96c5ea70c4e7b2790",
+      "signed_sha256": "6d7c3aa2350109237f23bd20b58633a06354142b324380b49aad8a769062cca1",
+      "main_header_and_compressed_payload_sha256": "ff4640be2e69ba92eb6df09b40cc259f9fa780d714dc785e89fc56187298a118",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-opcache-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "0297d553a7f58e774d1e17b686f3929227bff9523ebfd859865702b680f9b197",
+      "signed_sha256": "9fc93b8526d3a23eb4ab12fbf64f3fc01fd1c5f745b022918fd9a92b26dd8a77",
+      "main_header_and_compressed_payload_sha256": "933c6d9d96b8cc098bdb39470ecbd34aec459542b093fcbcaa84105d2f7eb7a9",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-pdo-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "d8b38f85232df164a5e7f24f403e56e5fc0efb1198809bc9780a49203b5f279c",
+      "signed_sha256": "e0334e9e13fa581c9e78b5baf27f28779efe34cdbaf1c8cff52e1b3a629f6c7d",
+      "main_header_and_compressed_payload_sha256": "2bf87eccd71837cb3d893224c5b4ced43286e18a3d073c28fe4a55de4ca2ed76",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-pgsql-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "28eed49446aff1e2c252e87d081513a9a980fa938a4d17a4a43b447430f0262c",
+      "signed_sha256": "f0971cf3816e9b579cb4720cce9be569a1c0cd88b64f56c536d8a572700a653c",
+      "main_header_and_compressed_payload_sha256": "577c9cee437ed06baa3df5db01e7cfabb6b6f26568720e477281cc8f487dfade",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-process-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "d4095712a2e814e1bcf4d09de645f7e1f8f30848df787f12504e5e5187c9c084",
+      "signed_sha256": "901cf64bea85a8b11c1a56673ac43b62ee7695db73898d83b16a5c5656a2affb",
+      "main_header_and_compressed_payload_sha256": "810021ba51ae65e23cc9adf236d5101b5f494063037499c7636b5691235d5da7",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-pspell-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "5388ff83f3b8415d19992ef5dd9c3ac6a0bfc04ca80db2d1cf5589e17945d16c",
+      "signed_sha256": "b14e8b30e6125ee5b28ff3e365cacb8cf15f19295502f9820051232f0a914605",
+      "main_header_and_compressed_payload_sha256": "3f6bc994dd5c0a93f9b04b47efb65c042efccfb171780680c22ef2d944cbf0ae",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-recode-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "433559fdc1a47e0e96f0f1aa91db859f4188dd3bd9058930de5c7feaa0266a9a",
+      "signed_sha256": "db8924bf322526a4751bdb59f242a1ad06db9a649b8f4890f39cb7f97d4ae2cc",
+      "main_header_and_compressed_payload_sha256": "53f33bc17542b8011afbee3184296536f4bb789568cd2a660e8fd60f31243803",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-snmp-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "69502f0e07966e4c7cd94a3f82d4e52dd55fe486d558d142d345724183eb3975",
+      "signed_sha256": "2faa68ff3031576cfe2de6871e4fcde9a302110aa4350809f9b1d0bf9d190b1a",
+      "main_header_and_compressed_payload_sha256": "fa874269123fcc1a5e556b0338eb71649717592d69f5670145268f9be1220a42",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-soap-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "e8b5fc9d578cc89670641e0defa49c7f551bafb86388b52b45befd9e09cf9c00",
+      "signed_sha256": "20aad84221a5af5ac522e4528e5b630a2d1b2175e112767436f8f769d8a5cc20",
+      "main_header_and_compressed_payload_sha256": "cbd0fe4d1dcad69ad39a5096fae6812df3e66a3ac30e64d22be841eef0130feb",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-tidy-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "4b50adc1327f1d63ce2f30500089f27aa838d8c425a2b62892f548f2c0af11d9",
+      "signed_sha256": "6acc51934ac553810285f07c6e022f349b43afe8ae871dab976b260901a62036",
+      "main_header_and_compressed_payload_sha256": "b2bb569c0787d9a930c4755cb12f812d3bc728bdd8476326b23a836d9c0e61ad",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-xml-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "b00eb1e80bf1e56d0f10a44fc6c925189977f0216aea41675c61ff8ba3c2244e",
+      "signed_sha256": "28e39c1b9d186070f41dfa376635568ae7ac3a39931736a1bcea151c245c1f8f",
+      "main_header_and_compressed_payload_sha256": "990205f2c7122ef09a87969be4fb20a3d12ada5cfc959027f3c2ba4be3e4322a",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/RPMS/i686/php-xmlrpc-5.6.40-47.3.el6.local.i686.rpm",
+      "before_sha256": "a4df1d2ffcab4990c69c820437ad5fab95c5a9979d75829da899ced0f7eb0113",
+      "signed_sha256": "a7b4096393eaba7c655fd7ecf3365f8641f2c354fd1e5906e89727af0fcf4a0d",
+      "main_header_and_compressed_payload_sha256": "f96928c3d833dd391b21417f8f1443a17787c490251d06018f4d31d5787c0830",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    },
+    {
+      "path": "dist/SRPMS/php-5.6.40-47.3.el6.local.src.rpm",
+      "before_sha256": "c30d552ea6430ed63c21bea2c1810927bb0d6797c7c2c173a5c821d152f0a1fd",
+      "signed_sha256": "2043ae9a3d23eaa8ea813ae1ca1b8747cec816309968c40bd2bc33a10d44a369",
+      "main_header_and_compressed_payload_sha256": "1e4305e55be77792c241410fdd7861854871c104b0bfcdf08d174c6ea8b494b0",
+      "main_header_and_compressed_payload_unchanged": true,
+      "header_and_payload_signatures": "PASS"
+    }
+  ],
+  "php_packages_verified": 34,
+  "external_dependency_files_unchanged": true
+}

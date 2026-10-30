@@ -1,0 +1,31 @@
+Release author and maintainer
+-----------------------------
+Artem Loboda - www.zuzlan.name
+https://www.zuzlan.name
+
+Upstream attribution
+--------------------
+PHP is developed by The PHP Group and its contributors.
+https://www.php.net/
+
+The base PHP 5.6 RPM packaging and security backports are derived from Remi's
+RPM repository and its contributors, including Remi Collet.
+https://rpms.remirepo.net/
+
+Additional patches, bundled libraries and external packages retain the
+authorship, copyright notices and license terms supplied with their sources.
+Individual patch headers and upstream notices identify their contributors.
+
+The release-maintainer credit does not replace upstream authorship or grant
+rights beyond the licenses of the respective components.
+
+October PHP2Shell backport
+-------------------------
+Anton Barinov and contributors, Anton-Barinov/php2shell-patches.
+https://github.com/Anton-Barinov/php2shell-patches
+The included minimal Remi patch corresponds to revision
+5eeffd651f236da9bdc2356a3f2c5d660ea0fabd, patches/php-5.6-minimal-remicollet.patch.
+
+The official minimal EOL correction used for comparison credits Arnaud Le Blanc
+and other PHP contributors. Original commit and patch notices remain intact.
+https://github.com/php/php-src/commit/712e60f9edfd03f0960fc4fc3c2c375f42b90aa2

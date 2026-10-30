@@ -1,0 +1,21 @@
+License scope
+
+Artem Loboda grants the MIT permission in LICENSE-MIT for his original
+contributions to the release documentation, presentation assets, build wrappers,
+packaging helpers and validation helpers in this repository. This permission
+also applies to those original contributions carried in the corresponding
+signed source and full release snapshots, whose older license notice did not
+include a separate grant. The grant covers only rights held by Artem Loboda.
+
+PHP source, upstream packaging and source-derived patches retain their existing
+licenses. This MIT grant does not replace or remove any third-party notices,
+including notices for material embedded in a helper or adapted from upstream.
+In particular it does not relicense build-kit/SOURCES, the upstream portions of
+build-kit/SPECS/php.spec, external dependency RPMs, or licenses/.
+
+The main PHP license is reproduced in licenses/php/LICENSE. Additional notices
+are in licenses/php/ and the source archive. JSONC, ZIP and libzip packages
+retain the notices in licenses/dependencies/ and their original RPM payloads.
+See THIRD_PARTY_NOTICES.md for the component index.
+
+Release author and maintainer: Artem Loboda - https://www.zuzlan.name

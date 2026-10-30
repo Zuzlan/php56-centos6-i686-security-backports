@@ -1,0 +1,26 @@
+# Binary packages are supplied as release assets.
+/dist/
+/release-assets/
+
+# Local build/test output and caches.
+/build-kit/BUILD/
+/build-kit/BUILDROOT/
+/build-kit/RPMS/
+/build-kit/SRPMS/
+/build-kit/logs/
+/build-kit/.build.lock
+/test-results/
+__pycache__/
+*.pyc
+*.log
+
+# Local credentials and generated private signing material.
+.env
+.env.*
+.gnupg/
+private-keys-v1.d/
+secring.gpg
+*.key
+*.p12
+*.pfx
+

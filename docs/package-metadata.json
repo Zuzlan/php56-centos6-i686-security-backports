@@ -1,0 +1,5878 @@
+{
+  "packages": [
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/httpd/conf.d/php.conf": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/httpd/modules/libphp5-zts.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/httpd/modules/libphp5.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/var/lib/php/session": {
+          "flags": 0,
+          "mode": 16888
+        },
+        "/var/lib/php/wsdlcache": {
+          "flags": 0,
+          "mode": 16888
+        },
+        "/var/www/icons/php.gif": {
+          "flags": 0,
+          "mode": 33188
+        }
+      },
+      "name": "php",
+      "obsoletes": [
+        "php53  ",
+        "php53u  ",
+        "php54w  ",
+        "php55u  ",
+        "php55w  ",
+        "php56u  ",
+        "php56w  ",
+        "php54 > 5.4",
+        "php-zts < 5.3.7"
+      ],
+      "path": "dist/RPMS/i686/php-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-zts = 5.6.40-47.3.el6.local",
+        "php-zts(x86-32) = 5.6.40-47.3.el6.local",
+        "mod_php = 5.6.40-47.3.el6.local",
+        "php(httpd)  ",
+        "php = 5.6.40-47.3.el6.local",
+        "php(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "rpmlib(VersionedDependencies) <= 3.0.3-1",
+        "httpd-mmn = 20051115",
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "php-cli(x86-32) = 5.6.40-47.3.el6.local",
+        "httpd  ",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "ld-linux.so.2  ",
+        "ld-linux.so.2(GLIBC_2.3)  ",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1)  ",
+        "libc.so.6(GLIBC_2.1.2)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.11)  ",
+        "libc.so.6(GLIBC_2.2)  ",
+        "libc.so.6(GLIBC_2.2.3)  ",
+        "libc.so.6(GLIBC_2.3)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libc.so.6(GLIBC_2.7)  ",
+        "libc.so.6(GLIBC_2.8)  ",
+        "libcom_err.so.2  ",
+        "libcrypt.so.1  ",
+        "libcrypto.so.10  ",
+        "libcrypto.so.10(OPENSSL_1.0.1)  ",
+        "libcrypto.so.10(OPENSSL_1.0.1_EC)  ",
+        "libcrypto.so.10(libcrypto.so.10)  ",
+        "libdl.so.2  ",
+        "libdl.so.2(GLIBC_2.0)  ",
+        "libdl.so.2(GLIBC_2.1)  ",
+        "libgssapi_krb5.so.2  ",
+        "libk5crypto.so.3  ",
+        "libkrb5.so.3  ",
+        "libm.so.6  ",
+        "libm.so.6(GLIBC_2.0)  ",
+        "libm.so.6(GLIBC_2.1)  ",
+        "libnsl.so.1  ",
+        "libpthread.so.0  ",
+        "libpthread.so.0(GLIBC_2.0)  ",
+        "libpthread.so.0(GLIBC_2.2)  ",
+        "librt.so.1  ",
+        "libssl.so.10  ",
+        "libssl.so.10(libssl.so.10)  ",
+        "libxml2.so.2  ",
+        "libxml2.so.2(LIBXML2_2.4.30)  ",
+        "libxml2.so.2(LIBXML2_2.5.2)  ",
+        "libxml2.so.2(LIBXML2_2.6.0)  ",
+        "libxml2.so.2(LIBXML2_2.6.11)  ",
+        "libz.so.1  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/20-bcmath.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-bcmath.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/bcmath.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/bcmath.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/share/doc/php-bcmath-5.6.40": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/share/doc/php-bcmath-5.6.40/libbcmath_COPYING": {
+          "flags": 2,
+          "mode": 33188
+        }
+      },
+      "name": "php-bcmath",
+      "obsoletes": [
+        "php53-bcmath  ",
+        "php53u-bcmath  ",
+        "php54-bcmath  ",
+        "php54w-bcmath  ",
+        "php55u-bcmath  ",
+        "php55w-bcmath  ",
+        "php56u-bcmath  ",
+        "php56w-bcmath  "
+      ],
+      "path": "dist/RPMS/i686/php-bcmath-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-bcmath = 5.6.40-47.3.el6.local",
+        "php-bcmath(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libpthread.so.0  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/usr/bin/phar": {
+          "flags": 0,
+          "mode": 41471
+        },
+        "/usr/bin/phar.phar": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/bin/php": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/bin/php-cgi": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/bin/phpize": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/bin/zts-php": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/share/doc/php-cli-5.6.40": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/share/doc/php-cli-5.6.40/README": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-cli-5.6.40/README.FastCGI": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/man/man1/phar.1.gz": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/man/man1/phar.phar.1.gz": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/man/man1/php-cgi.1.gz": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/man/man1/php.1.gz": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/man/man1/phpize.1.gz": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/man/man1/zts-php.1.gz": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/man/man1/zts-phpize.1.gz": {
+          "flags": 2,
+          "mode": 33188
+        }
+      },
+      "name": "php-cli",
+      "obsoletes": [
+        "php53-cli  ",
+        "php53u-cli  ",
+        "php54-cli  ",
+        "php54w-cli  ",
+        "php55u-cli  ",
+        "php55w-cli  ",
+        "php56u-cli  ",
+        "php56w-cli  "
+      ],
+      "path": "dist/RPMS/i686/php-cli-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-cgi = 5.6.40-47.3.el6.local",
+        "php-cgi(x86-32) = 5.6.40-47.3.el6.local",
+        "php-pcntl  ",
+        "php-pcntl(x86-32)  ",
+        "php-readline  ",
+        "php-readline(x86-32)  ",
+        "php-cli = 5.6.40-47.3.el6.local",
+        "php-cli(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(VersionedDependencies) <= 3.0.3-1",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "/bin/sh  ",
+        "/usr/bin/php  ",
+        "ld-linux.so.2  ",
+        "ld-linux.so.2(GLIBC_2.3)  ",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1)  ",
+        "libc.so.6(GLIBC_2.1.2)  ",
+        "libc.so.6(GLIBC_2.11)  ",
+        "libc.so.6(GLIBC_2.2)  ",
+        "libc.so.6(GLIBC_2.2.3)  ",
+        "libc.so.6(GLIBC_2.3)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libc.so.6(GLIBC_2.7)  ",
+        "libc.so.6(GLIBC_2.8)  ",
+        "libcom_err.so.2  ",
+        "libcrypt.so.1  ",
+        "libcrypto.so.10  ",
+        "libcrypto.so.10(OPENSSL_1.0.1)  ",
+        "libcrypto.so.10(OPENSSL_1.0.1_EC)  ",
+        "libcrypto.so.10(libcrypto.so.10)  ",
+        "libdl.so.2  ",
+        "libdl.so.2(GLIBC_2.0)  ",
+        "libdl.so.2(GLIBC_2.1)  ",
+        "libedit.so.0  ",
+        "libgssapi_krb5.so.2  ",
+        "libk5crypto.so.3  ",
+        "libkrb5.so.3  ",
+        "libm.so.6  ",
+        "libm.so.6(GLIBC_2.0)  ",
+        "libm.so.6(GLIBC_2.1)  ",
+        "libncurses.so.5  ",
+        "libnsl.so.1  ",
+        "libpthread.so.0  ",
+        "libpthread.so.0(GLIBC_2.0)  ",
+        "libpthread.so.0(GLIBC_2.1)  ",
+        "libpthread.so.0(GLIBC_2.2)  ",
+        "libresolv.so.2  ",
+        "libresolv.so.2(GLIBC_2.0)  ",
+        "libresolv.so.2(GLIBC_2.2)  ",
+        "librt.so.1  ",
+        "libssl.so.10  ",
+        "libssl.so.10(libssl.so.10)  ",
+        "libstdc++.so.6  ",
+        "libxml2.so.2  ",
+        "libxml2.so.2(LIBXML2_2.4.30)  ",
+        "libxml2.so.2(LIBXML2_2.5.2)  ",
+        "libxml2.so.2(LIBXML2_2.6.0)  ",
+        "libxml2.so.2(LIBXML2_2.6.11)  ",
+        "libz.so.1  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/etc/php-zts.d/20-bz2.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/20-calendar.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/20-ctype.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/20-curl.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/20-exif.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/20-fileinfo.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/20-ftp.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/20-gettext.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/20-iconv.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/20-phar.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/20-sockets.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/20-tokenizer.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/etc/php.d/20-bz2.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-calendar.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-ctype.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-curl.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-exif.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-fileinfo.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-ftp.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-gettext.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-iconv.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-phar.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-sockets.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-tokenizer.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/lib/php-zts": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/lib/php-zts/modules": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/lib/php-zts/modules/bz2.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/calendar.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/ctype.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/curl.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/exif.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/fileinfo.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/ftp.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/gettext.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/iconv.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/phar.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/sockets.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/tokenizer.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/lib/php/modules/bz2.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/calendar.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/ctype.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/curl.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/exif.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/fileinfo.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/ftp.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/gettext.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/iconv.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/phar.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/sockets.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/tokenizer.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/share/doc/php-common-5.6.40": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/share/doc/php-common-5.6.40/CODING_STANDARDS": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/CREDITS": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/EXTENSIONS": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/LICENSE": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/NEWS": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/README.EXT_SKEL": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/README.GIT-RULES": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/README.MAILINGLIST_RULES": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/README.NEW-OUTPUT-API": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/README.PARAMETER_PARSING_API": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/README.REDIST.BINS": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/README.RELEASE_PROCESS": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/README.SELF-CONTAINED-EXTENSIONS": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/README.STREAMS": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/README.SUBMITTING_PATCH": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/README.TESTING": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/README.TESTING2": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/README.UNIX-BUILD-SYSTEM": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/README.WIN32-BUILD-SYSTEM": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/README.input_filter": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/README.md": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/README.namespaces": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/TSRM_LICENSE": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/ZEND_LICENSE": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/libmagic_LICENSE": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/phar_LICENSE": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/php.ini-development": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/php.ini-development.sqlite3.defensive": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/php.ini-production": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/php.ini-production.sqlite3.defensive": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/regex_COPYRIGHT": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-common-5.6.40/timelib_LICENSE": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/php": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/var/lib/php": {
+          "flags": 0,
+          "mode": 16877
+        }
+      },
+      "name": "php-common",
+      "obsoletes": [
+        "php-pecl-phar < 1.2.4",
+        "php-pecl-Fileinfo < 1.0.5",
+        "php-mhash < 5.3.0",
+        "php53-mhash  ",
+        "php53u-mhash  ",
+        "php53-common  ",
+        "php53u-common  ",
+        "php54-common  ",
+        "php54w-common  ",
+        "php55u-common  ",
+        "php55w-common  ",
+        "php56u-common  ",
+        "php56w-common  "
+      ],
+      "path": "dist/RPMS/i686/php-common-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php(api) = 20131106-32",
+        "php(zend-abi) = 20131226-32",
+        "php(language) = 5.6.40",
+        "php(language)(x86-32) = 5.6.40",
+        "php-bz2  ",
+        "php-bz2(x86-32)  ",
+        "php-calendar  ",
+        "php-calendar(x86-32)  ",
+        "php-core = 5.6.40",
+        "php-core(x86-32) = 5.6.40",
+        "php-ctype  ",
+        "php-ctype(x86-32)  ",
+        "php-curl  ",
+        "php-curl(x86-32)  ",
+        "php-date  ",
+        "php-date(x86-32)  ",
+        "php-ereg  ",
+        "php-ereg(x86-32)  ",
+        "php-exif  ",
+        "php-exif(x86-32)  ",
+        "php-fileinfo  ",
+        "php-fileinfo(x86-32)  ",
+        "php-filter  ",
+        "php-filter(x86-32)  ",
+        "php-ftp  ",
+        "php-ftp(x86-32)  ",
+        "php-gettext  ",
+        "php-gettext(x86-32)  ",
+        "php-hash  ",
+        "php-hash(x86-32)  ",
+        "php-mhash = 5.6.40",
+        "php-mhash(x86-32) = 5.6.40",
+        "php-iconv  ",
+        "php-iconv(x86-32)  ",
+        "php-libxml  ",
+        "php-libxml(x86-32)  ",
+        "php-openssl  ",
+        "php-openssl(x86-32)  ",
+        "php-phar  ",
+        "php-phar(x86-32)  ",
+        "php-pcre  ",
+        "php-pcre(x86-32)  ",
+        "php-reflection  ",
+        "php-reflection(x86-32)  ",
+        "php-session  ",
+        "php-session(x86-32)  ",
+        "php-sockets  ",
+        "php-sockets(x86-32)  ",
+        "php-spl  ",
+        "php-spl(x86-32)  ",
+        "php-standard = 5.6.40",
+        "php-standard(x86-32) = 5.6.40",
+        "php-tokenizer  ",
+        "php-tokenizer(x86-32)  ",
+        "php-zlib  ",
+        "php-zlib(x86-32)  ",
+        "php-pecl-Fileinfo = 1.0.5",
+        "php-pecl-Fileinfo(x86-32) = 1.0.5",
+        "php-pecl(Fileinfo) = 1.0.5",
+        "php-pecl(Fileinfo)(x86-32) = 1.0.5",
+        "php-common = 5.6.40-47.3.el6.local",
+        "php-common(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "rpmlib(VersionedDependencies) <= 3.0.3-1",
+        "php-pecl-jsonc(x86-32)  ",
+        "php-pecl-zip(x86-32)  ",
+        "/bin/sh  ",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libbz2.so.1  ",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.2)  ",
+        "libc.so.6(GLIBC_2.3)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libc.so.6(GLIBC_2.8)  ",
+        "libcrypto.so.10  ",
+        "libcurl.so.4  ",
+        "libpthread.so.0  ",
+        "libpthread.so.0(GLIBC_2.0)  ",
+        "libssl.so.10  ",
+        "libssl.so.10(libssl.so.10)  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "posttrans scriptlet (using /bin/sh):\ncat << EOF\n=====================================================================\n\n  WARNING : PHP 5.6 have reached its \"End of Life\" in\n  January 2019. Even, if this package includes some of\n  the important security fixes, backported from 8.1, the\n  UPGRADE to a maintained version is very strongly RECOMMENDED.\n\n=====================================================================\nEOF\n",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/20-dba.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-dba.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/dba.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/dba.so": {
+          "flags": 0,
+          "mode": 33261
+        }
+      },
+      "name": "php-dba",
+      "obsoletes": [
+        "php53-dba  ",
+        "php53u-dba  ",
+        "php54-dba  ",
+        "php54w-dba  ",
+        "php55u-dba  ",
+        "php55w-dba  ",
+        "php56u-dba  ",
+        "php56w-dba  "
+      ],
+      "path": "dist/RPMS/i686/php-dba-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-dba = 5.6.40-47.3.el6.local",
+        "php-dba(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libdb-4.7.so  ",
+        "libgdbm.so.2  ",
+        "libpthread.so.0  ",
+        "libpthread.so.0(GLIBC_2.0)  ",
+        "libtokyocabinet.so.8  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/usr/bin/phpdbg": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/share/doc/php-dbg-5.6.40": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/share/doc/php-dbg-5.6.40/CREDITS": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-dbg-5.6.40/README.md": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/man/man1/phpdbg.1.gz": {
+          "flags": 2,
+          "mode": 33188
+        }
+      },
+      "name": "php-dbg",
+      "obsoletes": [
+        "php56u-dbg  ",
+        "php56w-phpdbg  "
+      ],
+      "path": "dist/RPMS/i686/php-dbg-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-dbg = 5.6.40-47.3.el6.local",
+        "php-dbg(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1)  ",
+        "libc.so.6(GLIBC_2.11)  ",
+        "libc.so.6(GLIBC_2.2)  ",
+        "libc.so.6(GLIBC_2.2.3)  ",
+        "libc.so.6(GLIBC_2.3)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libc.so.6(GLIBC_2.7)  ",
+        "libc.so.6(GLIBC_2.8)  ",
+        "libcom_err.so.2  ",
+        "libcrypt.so.1  ",
+        "libcrypto.so.10  ",
+        "libcrypto.so.10(OPENSSL_1.0.1)  ",
+        "libcrypto.so.10(OPENSSL_1.0.1_EC)  ",
+        "libcrypto.so.10(libcrypto.so.10)  ",
+        "libdl.so.2  ",
+        "libdl.so.2(GLIBC_2.0)  ",
+        "libdl.so.2(GLIBC_2.1)  ",
+        "libedit.so.0  ",
+        "libgssapi_krb5.so.2  ",
+        "libk5crypto.so.3  ",
+        "libkrb5.so.3  ",
+        "libm.so.6  ",
+        "libm.so.6(GLIBC_2.0)  ",
+        "libm.so.6(GLIBC_2.1)  ",
+        "libncurses.so.5  ",
+        "libnsl.so.1  ",
+        "libresolv.so.2  ",
+        "libresolv.so.2(GLIBC_2.0)  ",
+        "libresolv.so.2(GLIBC_2.2)  ",
+        "librt.so.1  ",
+        "libssl.so.10  ",
+        "libssl.so.10(libssl.so.10)  ",
+        "libstdc++.so.6  ",
+        "libxml2.so.2  ",
+        "libxml2.so.2(LIBXML2_2.4.30)  ",
+        "libxml2.so.2(LIBXML2_2.5.2)  ",
+        "libxml2.so.2(LIBXML2_2.6.0)  ",
+        "libxml2.so.2(LIBXML2_2.6.11)  ",
+        "libz.so.1  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/rpm/macros.php": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/bin/php-config": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/bin/zts-php-config": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/bin/zts-phpize": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/include/php": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/TSRM": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/TSRM/TSRM.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/TSRM/readdir.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/TSRM/tsrm_config.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/TSRM/tsrm_config_common.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/TSRM/tsrm_nw.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/TSRM/tsrm_strtok_r.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/Zend/zend.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_API.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_alloc.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_ast.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_build.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_builtin_functions.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_closures.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_compile.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_config.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_config.nw.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_constants.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_dtrace.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_dtrace_gen.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_dynamic_array.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_errors.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_exceptions.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_execute.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_extensions.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_float.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_gc.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_generators.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_globals.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_globals_macros.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_hash.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_highlight.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_indent.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_ini.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_ini_parser.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_ini_scanner.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_ini_scanner_defs.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_interfaces.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_istdiostream.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_iterators.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_language_parser.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_language_scanner.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_language_scanner_defs.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_list.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_llist.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_modules.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_multibyte.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_multiply.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_object_handlers.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_objects.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_objects_API.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_operators.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_ptr_stack.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_qsort.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_signal.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_stack.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_static_allocator.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_stream.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_string.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_strtod.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_ts_hash.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_types.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_variables.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_virtual_cwd.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_vm.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_vm_def.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_vm_execute.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/Zend/zend_vm_opcodes.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/date": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/date/lib": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/date/lib/timelib.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/date/lib/timelib_config.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/date/lib/timelib_structs.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/date/php_date.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/dom": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/dom/xml_common.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/ereg": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/ereg/php_ereg.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/ereg/php_regex.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/ereg/regex": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/ereg/regex/cclass.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/ereg/regex/cname.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/ereg/regex/regex.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/ereg/regex/regex2.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/ereg/regex/utils.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/filter": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/filter/php_filter.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/gd": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/gd/gd_compat.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/gd/gdcache.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/gd/libgd": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/gd/libgd/gd.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/gd/libgd/gd_intern.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/gd/libgd/gd_io.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/gd/libgd/gdcache.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/gd/libgd/gdfontg.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/gd/libgd/gdfontl.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/gd/libgd/gdfontmb.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/gd/libgd/gdfonts.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/gd/libgd/gdfontt.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/gd/libgd/gdhelpers.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/gd/libgd/jisx0208.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/gd/libgd/wbmp.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/gd/libgd/webpimg.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/gd/php_gd.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/hash": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/hash/php_hash.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/hash/php_hash_adler32.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/hash/php_hash_crc32.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/hash/php_hash_fnv.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/hash/php_hash_gost.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/hash/php_hash_haval.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/hash/php_hash_joaat.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/hash/php_hash_md.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/hash/php_hash_ripemd.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/hash/php_hash_sha.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/hash/php_hash_snefru.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/hash/php_hash_tiger.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/hash/php_hash_whirlpool.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/iconv": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/iconv/php_have_bsd_iconv.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/iconv/php_have_glibc_iconv.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/iconv/php_have_ibm_iconv.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/iconv/php_have_iconv.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/iconv/php_have_libiconv.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/iconv/php_iconv.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/iconv/php_iconv_aliased_libiconv.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/iconv/php_iconv_broken_ignore.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/iconv/php_iconv_supports_errno.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/iconv/php_php_iconv_h_path.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/iconv/php_php_iconv_impl.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/libxml": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/libxml/php_libxml.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mbstring": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/mbstring/libmbfl": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/mbstring/libmbfl/config.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mbstring/libmbfl/mbfl": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/mbstring/libmbfl/mbfl/eaw_table.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mbstring/libmbfl/mbfl/mbfilter.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mbstring/libmbfl/mbfl/mbfilter_8bit.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mbstring/libmbfl/mbfl/mbfilter_pass.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mbstring/libmbfl/mbfl/mbfilter_wchar.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mbstring/libmbfl/mbfl/mbfl_allocators.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mbstring/libmbfl/mbfl/mbfl_consts.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mbstring/libmbfl/mbfl/mbfl_convert.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mbstring/libmbfl/mbfl/mbfl_defs.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mbstring/libmbfl/mbfl/mbfl_encoding.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mbstring/libmbfl/mbfl/mbfl_filter_output.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mbstring/libmbfl/mbfl/mbfl_ident.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mbstring/libmbfl/mbfl/mbfl_language.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mbstring/libmbfl/mbfl/mbfl_memory_device.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mbstring/libmbfl/mbfl/mbfl_string.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mbstring/mbstring.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mbstring/oniguruma": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/mbstring/oniguruma/oniguruma.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mbstring/php_mbregex.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mbstring/php_onig_compat.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mysqli": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/mysqli/mysqli_mysqlnd.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mysqli/php_mysqli_structs.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mysqlnd": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/mysqlnd/mysql_float_to_double.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mysqlnd/mysqlnd.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mysqlnd/mysqlnd_alloc.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mysqlnd/mysqlnd_block_alloc.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mysqlnd/mysqlnd_charset.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mysqlnd/mysqlnd_debug.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mysqlnd/mysqlnd_enum_n_def.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mysqlnd/mysqlnd_ext_plugin.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mysqlnd/mysqlnd_libmysql_compat.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mysqlnd/mysqlnd_net.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mysqlnd/mysqlnd_portability.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mysqlnd/mysqlnd_priv.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mysqlnd/mysqlnd_result.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mysqlnd/mysqlnd_result_meta.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mysqlnd/mysqlnd_reverse_api.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mysqlnd/mysqlnd_statistics.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mysqlnd/mysqlnd_structs.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mysqlnd/mysqlnd_wireprotocol.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/mysqlnd/php_mysqlnd.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/pcre": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/pcre/pcrelib": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/pcre/pcrelib/config.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/pcre/pcrelib/pcre.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/pcre/pcrelib/pcre_internal.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/pcre/pcrelib/pcreposix.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/pcre/pcrelib/ucp.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/pcre/php_pcre.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/pdo": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/pdo/php_pdo.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/pdo/php_pdo_driver.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/pdo/php_pdo_error.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/phar": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/phar/php_phar.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/session": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/session/mod_files.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/session/mod_user.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/session/php_session.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/simplexml": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/simplexml/php_simplexml.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/simplexml/php_simplexml_exports.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/sockets": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/sockets/php_sockets.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/spl": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/spl/php_spl.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/spl/spl_array.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/spl/spl_directory.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/spl/spl_dllist.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/spl/spl_engine.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/spl/spl_exceptions.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/spl/spl_fixedarray.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/spl/spl_functions.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/spl/spl_heap.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/spl/spl_iterators.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/spl/spl_observer.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/standard/base64.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/basic_functions.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/crc32.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/credits.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/credits_ext.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/credits_sapi.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/crypt_blowfish.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/crypt_freesec.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/css.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/cyr_convert.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/datetime.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/dl.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/exec.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/file.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/flock_compat.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/fsock.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/head.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/html.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/html_tables.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/info.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/md5.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/microtime.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/pack.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/pageinfo.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_array.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_assert.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_browscap.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_crypt.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_crypt_r.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_dir.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_dns.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_ext_syslog.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_filestat.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_fopen_wrappers.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_ftok.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_http.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_image.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_incomplete_class.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_iptc.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_lcg.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_link.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_mail.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_math.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_metaphone.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_password.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_rand.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_smart_str.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_smart_str_public.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_standard.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_string.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_type.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_uuencode.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_var.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/php_versioning.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/proc_open.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/quot_print.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/scanf.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/sha1.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/streamsfuncs.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/uniqid.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/url.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/standard/url_scanner_ex.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/xml": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/ext/xml/expat_compat.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/ext/xml/php_xml.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/include": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/main": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/main/SAPI.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/build-defs.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/fopen_wrappers.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/php.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/php_compat.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/php_config.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/php_content_types.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/php_getopt.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/php_globals.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/php_ini.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/php_main.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/php_memory_streams.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/php_network.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/php_open_temporary_file.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/php_output.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/php_reentrancy.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/php_scandir.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/php_stdint.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/php_streams.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/php_syslog.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/php_ticks.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/php_variables.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/php_version.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/rfc1867.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/snprintf.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/spprintf.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/streams": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/main/streams/php_stream_context.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/streams/php_stream_filter_api.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/streams/php_stream_glob_wrapper.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/streams/php_stream_mmap.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/streams/php_stream_plain_wrapper.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/streams/php_stream_transport.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/streams/php_stream_userspace.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/main/streams/php_streams_int.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php-zts/php/sapi": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/sapi/cli": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php-zts/php/sapi/cli/cli.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/TSRM": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/TSRM/TSRM.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/TSRM/readdir.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/TSRM/tsrm_config.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/TSRM/tsrm_config_common.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/TSRM/tsrm_nw.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/TSRM/tsrm_strtok_r.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/Zend/zend.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_API.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_alloc.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_ast.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_build.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_builtin_functions.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_closures.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_compile.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_config.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_config.nw.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_constants.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_dtrace.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_dtrace_gen.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_dynamic_array.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_errors.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_exceptions.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_execute.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_extensions.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_float.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_gc.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_generators.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_globals.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_globals_macros.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_hash.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_highlight.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_indent.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_ini.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_ini_parser.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_ini_scanner.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_ini_scanner_defs.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_interfaces.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_istdiostream.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_iterators.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_language_parser.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_language_scanner.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_language_scanner_defs.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_list.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_llist.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_modules.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_multibyte.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_multiply.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_object_handlers.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_objects.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_objects_API.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_operators.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_ptr_stack.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_qsort.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_signal.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_stack.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_static_allocator.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_stream.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_string.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_strtod.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_ts_hash.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_types.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_variables.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_virtual_cwd.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_vm.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_vm_def.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_vm_execute.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/Zend/zend_vm_opcodes.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/date": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/date/lib": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/date/lib/timelib.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/date/lib/timelib_config.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/date/lib/timelib_structs.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/date/php_date.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/dom": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/dom/xml_common.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/ereg": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/ereg/php_ereg.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/ereg/php_regex.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/ereg/regex": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/ereg/regex/cclass.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/ereg/regex/cname.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/ereg/regex/regex.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/ereg/regex/regex2.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/ereg/regex/utils.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/filter": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/filter/php_filter.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/gd": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/gd/gd_compat.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/gd/gdcache.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/gd/libgd": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/gd/libgd/gd.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/gd/libgd/gd_intern.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/gd/libgd/gd_io.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/gd/libgd/gdcache.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/gd/libgd/gdfontg.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/gd/libgd/gdfontl.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/gd/libgd/gdfontmb.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/gd/libgd/gdfonts.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/gd/libgd/gdfontt.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/gd/libgd/gdhelpers.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/gd/libgd/jisx0208.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/gd/libgd/wbmp.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/gd/libgd/webpimg.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/gd/php_gd.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/hash": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/hash/php_hash.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/hash/php_hash_adler32.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/hash/php_hash_crc32.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/hash/php_hash_fnv.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/hash/php_hash_gost.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/hash/php_hash_haval.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/hash/php_hash_joaat.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/hash/php_hash_md.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/hash/php_hash_ripemd.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/hash/php_hash_sha.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/hash/php_hash_snefru.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/hash/php_hash_tiger.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/hash/php_hash_whirlpool.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/iconv": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/iconv/php_have_bsd_iconv.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/iconv/php_have_glibc_iconv.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/iconv/php_have_ibm_iconv.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/iconv/php_have_iconv.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/iconv/php_have_libiconv.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/iconv/php_iconv.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/iconv/php_iconv_aliased_libiconv.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/iconv/php_iconv_broken_ignore.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/iconv/php_iconv_supports_errno.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/iconv/php_php_iconv_h_path.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/iconv/php_php_iconv_impl.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/libxml": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/libxml/php_libxml.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mbstring": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/mbstring/libmbfl": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/mbstring/libmbfl/config.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mbstring/libmbfl/mbfl": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/mbstring/libmbfl/mbfl/eaw_table.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mbstring/libmbfl/mbfl/mbfilter.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mbstring/libmbfl/mbfl/mbfilter_8bit.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mbstring/libmbfl/mbfl/mbfilter_pass.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mbstring/libmbfl/mbfl/mbfilter_wchar.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mbstring/libmbfl/mbfl/mbfl_allocators.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mbstring/libmbfl/mbfl/mbfl_consts.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mbstring/libmbfl/mbfl/mbfl_convert.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mbstring/libmbfl/mbfl/mbfl_defs.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mbstring/libmbfl/mbfl/mbfl_encoding.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mbstring/libmbfl/mbfl/mbfl_filter_output.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mbstring/libmbfl/mbfl/mbfl_ident.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mbstring/libmbfl/mbfl/mbfl_language.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mbstring/libmbfl/mbfl/mbfl_memory_device.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mbstring/libmbfl/mbfl/mbfl_string.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mbstring/mbstring.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mbstring/oniguruma": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/mbstring/oniguruma/oniguruma.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mbstring/php_mbregex.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mbstring/php_onig_compat.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mysqli": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/mysqli/mysqli_mysqlnd.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mysqli/php_mysqli_structs.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mysqlnd": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/mysqlnd/mysql_float_to_double.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mysqlnd/mysqlnd.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mysqlnd/mysqlnd_alloc.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mysqlnd/mysqlnd_block_alloc.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mysqlnd/mysqlnd_charset.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mysqlnd/mysqlnd_debug.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mysqlnd/mysqlnd_enum_n_def.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mysqlnd/mysqlnd_ext_plugin.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mysqlnd/mysqlnd_libmysql_compat.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mysqlnd/mysqlnd_net.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mysqlnd/mysqlnd_portability.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mysqlnd/mysqlnd_priv.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mysqlnd/mysqlnd_result.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mysqlnd/mysqlnd_result_meta.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mysqlnd/mysqlnd_reverse_api.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mysqlnd/mysqlnd_statistics.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mysqlnd/mysqlnd_structs.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mysqlnd/mysqlnd_wireprotocol.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/mysqlnd/php_mysqlnd.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/pcre": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/pcre/pcrelib": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/pcre/pcrelib/config.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/pcre/pcrelib/pcre.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/pcre/pcrelib/pcre_internal.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/pcre/pcrelib/pcreposix.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/pcre/pcrelib/ucp.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/pcre/php_pcre.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/pdo": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/pdo/php_pdo.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/pdo/php_pdo_driver.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/pdo/php_pdo_error.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/phar": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/phar/php_phar.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/session": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/session/mod_files.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/session/mod_user.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/session/php_session.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/simplexml": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/simplexml/php_simplexml.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/simplexml/php_simplexml_exports.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/sockets": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/sockets/php_sockets.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/spl": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/spl/php_spl.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/spl/spl_array.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/spl/spl_directory.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/spl/spl_dllist.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/spl/spl_engine.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/spl/spl_exceptions.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/spl/spl_fixedarray.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/spl/spl_functions.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/spl/spl_heap.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/spl/spl_iterators.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/spl/spl_observer.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/standard/base64.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/basic_functions.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/crc32.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/credits.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/credits_ext.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/credits_sapi.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/crypt_blowfish.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/crypt_freesec.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/css.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/cyr_convert.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/datetime.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/dl.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/exec.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/file.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/flock_compat.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/fsock.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/head.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/html.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/html_tables.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/info.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/md5.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/microtime.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/pack.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/pageinfo.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_array.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_assert.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_browscap.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_crypt.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_crypt_r.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_dir.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_dns.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_ext_syslog.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_filestat.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_fopen_wrappers.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_ftok.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_http.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_image.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_incomplete_class.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_iptc.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_lcg.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_link.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_mail.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_math.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_metaphone.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_password.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_rand.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_smart_str.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_smart_str_public.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_standard.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_string.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_type.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_uuencode.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_var.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/php_versioning.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/proc_open.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/quot_print.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/scanf.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/sha1.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/streamsfuncs.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/uniqid.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/url.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/standard/url_scanner_ex.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/xml": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/ext/xml/expat_compat.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/ext/xml/php_xml.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/include": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/main": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/main/SAPI.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/build-defs.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/fopen_wrappers.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/php.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/php_compat.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/php_config.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/php_content_types.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/php_getopt.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/php_globals.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/php_ini.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/php_main.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/php_memory_streams.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/php_network.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/php_open_temporary_file.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/php_output.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/php_reentrancy.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/php_scandir.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/php_stdint.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/php_streams.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/php_syslog.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/php_ticks.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/php_variables.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/php_version.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/rfc1867.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/snprintf.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/spprintf.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/streams": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/main/streams/php_stream_context.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/streams/php_stream_filter_api.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/streams/php_stream_glob_wrapper.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/streams/php_stream_mmap.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/streams/php_stream_plain_wrapper.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/streams/php_stream_transport.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/streams/php_stream_userspace.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/main/streams/php_streams_int.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/sapi": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/sapi/cli": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/sapi/cli/cli.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/include/php/sapi/embed": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/include/php/sapi/embed/php_embed.h": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/build": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/lib/php-zts/build/Makefile.global": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/build/acinclude.m4": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/build/config.guess": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/build/config.sub": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/build/libtool.m4": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/build/ltmain.sh": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/build/mkdep.awk": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/build/phpize.m4": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/build/run-tests.php": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/build/scan_makefile_in.awk": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/build/shtool": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/build": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/lib/php/build/Makefile.global": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/lib/php/build/acinclude.m4": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/lib/php/build/config.guess": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/build/config.sub": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/build/libtool.m4": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/lib/php/build/ltmain.sh": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/lib/php/build/mkdep.awk": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/lib/php/build/phpize.m4": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/lib/php/build/run-tests.php": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/lib/php/build/scan_makefile_in.awk": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/lib/php/build/shtool": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/share/man/man1/php-config.1.gz": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/man/man1/zts-php-config.1.gz": {
+          "flags": 2,
+          "mode": 33188
+        }
+      },
+      "name": "php-devel",
+      "obsoletes": [
+        "php-pecl-pdo-devel  ",
+        "php53-devel  ",
+        "php53u-devel  ",
+        "php54-devel  ",
+        "php54w-devel  ",
+        "php55u-devel  ",
+        "php55w-devel  ",
+        "php56u-devel  ",
+        "php56w-devel  "
+      ],
+      "path": "dist/RPMS/i686/php-devel-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-zts-devel = 5.6.40-47.3.el6.local",
+        "php-zts-devel(x86-32) = 5.6.40-47.3.el6.local",
+        "php-devel = 5.6.40-47.3.el6.local",
+        "php-devel(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-cli(x86-32) = 5.6.40-47.3.el6.local",
+        "autoconf  ",
+        "automake  ",
+        "make  ",
+        "krb5-devel(x86-32)  ",
+        "libedit-devel(x86-32)  ",
+        "libxml2-devel(x86-32)  ",
+        "openssl-devel(x86-32)  ",
+        "zlib-devel(x86-32)  ",
+        "rpmlib(VersionedDependencies) <= 3.0.3-1",
+        "php-pecl-jsonc-devel(x86-32)  ",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "/bin/sh  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/usr/lib/libphp5-5.6.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/libphp5.so": {
+          "flags": 0,
+          "mode": 41471
+        }
+      },
+      "name": "php-embedded",
+      "obsoletes": [
+        "php53-embedded  ",
+        "php53u-embedded  ",
+        "php54-embedded  ",
+        "php54w-embedded  ",
+        "php55u-embedded  ",
+        "php55w-embedded  ",
+        "php56u-embedded  ",
+        "php56w-embedded  "
+      ],
+      "path": "dist/RPMS/i686/php-embedded-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-embedded-devel = 5.6.40-47.3.el6.local",
+        "php-embedded-devel(x86-32) = 5.6.40-47.3.el6.local",
+        "libphp5-5.6.so  ",
+        "php-embedded = 5.6.40-47.3.el6.local",
+        "php-embedded(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(VersionedDependencies) <= 3.0.3-1",
+        "/sbin/ldconfig  ",
+        "/sbin/ldconfig  ",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.11)  ",
+        "libc.so.6(GLIBC_2.2)  ",
+        "libc.so.6(GLIBC_2.2.3)  ",
+        "libc.so.6(GLIBC_2.3)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libc.so.6(GLIBC_2.7)  ",
+        "libc.so.6(GLIBC_2.8)  ",
+        "libcom_err.so.2  ",
+        "libcrypt.so.1  ",
+        "libcrypto.so.10  ",
+        "libcrypto.so.10(OPENSSL_1.0.1)  ",
+        "libcrypto.so.10(OPENSSL_1.0.1_EC)  ",
+        "libcrypto.so.10(libcrypto.so.10)  ",
+        "libdl.so.2  ",
+        "libdl.so.2(GLIBC_2.0)  ",
+        "libdl.so.2(GLIBC_2.1)  ",
+        "libgssapi_krb5.so.2  ",
+        "libk5crypto.so.3  ",
+        "libkrb5.so.3  ",
+        "libm.so.6  ",
+        "libm.so.6(GLIBC_2.0)  ",
+        "libm.so.6(GLIBC_2.1)  ",
+        "libnsl.so.1  ",
+        "libphp5-5.6.so  ",
+        "librt.so.1  ",
+        "libssl.so.10  ",
+        "libssl.so.10(libssl.so.10)  ",
+        "libxml2.so.2  ",
+        "libxml2.so.2(LIBXML2_2.4.30)  ",
+        "libxml2.so.2(LIBXML2_2.5.2)  ",
+        "libxml2.so.2(LIBXML2_2.6.0)  ",
+        "libxml2.so.2(LIBXML2_2.6.11)  ",
+        "libz.so.1  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "postinstall program: /sbin/ldconfig\npostuninstall program: /sbin/ldconfig\n",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/20-enchant.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-enchant.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/enchant.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/enchant.so": {
+          "flags": 0,
+          "mode": 33261
+        }
+      },
+      "name": "php-enchant",
+      "obsoletes": [
+        "php53-enchant  ",
+        "php53u-enchant  ",
+        "php54-enchant  ",
+        "php54w-enchant  ",
+        "php55u-enchant  ",
+        "php55w-enchant  ",
+        "php56u-enchant  ",
+        "php56w-enchant  "
+      ],
+      "path": "dist/RPMS/i686/php-enchant-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-enchant = 5.6.40-47.3.el6.local",
+        "php-enchant(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libenchant.so.1  ",
+        "libpthread.so.0  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/logrotate.d/php-fpm": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-fpm.conf": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-fpm.d": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/etc/php-fpm.d/www.conf": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/rc.d/init.d/php-fpm": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/etc/sysconfig/php-fpm": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/sbin/php-fpm": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/share/doc/php-fpm-5.6.40": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/share/doc/php-fpm-5.6.40/README": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-fpm-5.6.40/fpm_LICENSE": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-fpm-5.6.40/httpd-php.conf": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-fpm-5.6.40/nginx-fpm.conf": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-fpm-5.6.40/nginx-php.conf": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-fpm-5.6.40/php-fpm.conf.default": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/fpm": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/share/fpm/status.html": {
+          "flags": 0,
+          "mode": 33188
+        },
+        "/usr/share/man/man8/php-fpm.8.gz": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/var/lib/php/session": {
+          "flags": 0,
+          "mode": 16888
+        },
+        "/var/lib/php/wsdlcache": {
+          "flags": 0,
+          "mode": 16888
+        },
+        "/var/log/php-fpm": {
+          "flags": 0,
+          "mode": 16888
+        },
+        "/var/run/php-fpm": {
+          "flags": 0,
+          "mode": 16877
+        }
+      },
+      "name": "php-fpm",
+      "obsoletes": [
+        "php53-fpm  ",
+        "php53u-fpm  ",
+        "php54-fpm  ",
+        "php54w-fpm  ",
+        "php55u-fpm  ",
+        "php55w-fpm  ",
+        "php56u-fpm  ",
+        "php56w-fpm  "
+      ],
+      "path": "dist/RPMS/i686/php-fpm-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-fpm = 5.6.40-47.3.el6.local",
+        "php-fpm(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "/usr/sbin/useradd  ",
+        "initscripts  ",
+        "initscripts  ",
+        "/bin/sh  ",
+        "/bin/sh  ",
+        "/bin/sh  ",
+        "/bin/sh  ",
+        "/bin/sh  ",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "/bin/sh  ",
+        "libacl.so.1  ",
+        "libacl.so.1(ACL_1.0)  ",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1)  ",
+        "libc.so.6(GLIBC_2.11)  ",
+        "libc.so.6(GLIBC_2.2)  ",
+        "libc.so.6(GLIBC_2.2.3)  ",
+        "libc.so.6(GLIBC_2.3)  ",
+        "libc.so.6(GLIBC_2.3.2)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libc.so.6(GLIBC_2.7)  ",
+        "libc.so.6(GLIBC_2.8)  ",
+        "libcom_err.so.2  ",
+        "libcrypt.so.1  ",
+        "libcrypto.so.10  ",
+        "libcrypto.so.10(OPENSSL_1.0.1)  ",
+        "libcrypto.so.10(OPENSSL_1.0.1_EC)  ",
+        "libcrypto.so.10(libcrypto.so.10)  ",
+        "libdl.so.2  ",
+        "libdl.so.2(GLIBC_2.0)  ",
+        "libdl.so.2(GLIBC_2.1)  ",
+        "libgssapi_krb5.so.2  ",
+        "libk5crypto.so.3  ",
+        "libkrb5.so.3  ",
+        "libm.so.6  ",
+        "libm.so.6(GLIBC_2.0)  ",
+        "libm.so.6(GLIBC_2.1)  ",
+        "libnsl.so.1  ",
+        "libresolv.so.2  ",
+        "libresolv.so.2(GLIBC_2.0)  ",
+        "libresolv.so.2(GLIBC_2.2)  ",
+        "librt.so.1  ",
+        "librt.so.1(GLIBC_2.2)  ",
+        "libssl.so.10  ",
+        "libssl.so.10(libssl.so.10)  ",
+        "libxml2.so.2  ",
+        "libxml2.so.2(LIBXML2_2.4.30)  ",
+        "libxml2.so.2(LIBXML2_2.5.2)  ",
+        "libxml2.so.2(LIBXML2_2.6.0)  ",
+        "libxml2.so.2(LIBXML2_2.6.11)  ",
+        "libz.so.1  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "preinstall scriptlet (using /bin/sh):\n# Add the \"apache\" user as we don't require httpd\ngetent group  apache >/dev/null || \\\n  groupadd -g 48 -r apache\ngetent passwd apache >/dev/null || \\\n  useradd -r -u 48 -g apache -s /sbin/nologin \\\n    -d /var/www -c \"Apache\" apache\nexit 0\npostinstall scriptlet (using /bin/sh):\nif [ $1 = 1 ]; then\n    # Initial installation\n    /sbin/chkconfig --add php-fpm\nfi\npreuninstall scriptlet (using /bin/sh):\nif [ $1 = 0 ]; then\n    # Package removal, not upgrade\n    /sbin/service php-fpm stop >/dev/null 2>&1\n    /sbin/chkconfig --del php-fpm\nfi\npostuninstall scriptlet (using /bin/sh):\nif [ $1 -ge 1 ]; then\n    /sbin/service php-fpm condrestart >/dev/null 2>&1 || :\nfi\n\n# Handle upgrading from SysV initscript to native systemd unit.\n# We can tell if a SysV version of php-fpm was previously installed by\n# checking to see if the initscript is present.\n",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/20-gd.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-gd.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/gd.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/gd.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/share/doc/php-gd-5.6.40": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/share/doc/php-gd-5.6.40/libgd_COPYING": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-gd-5.6.40/libgd_README": {
+          "flags": 2,
+          "mode": 33188
+        }
+      },
+      "name": "php-gd",
+      "obsoletes": [
+        "php53-gd  ",
+        "php53u-gd  ",
+        "php54-gd  ",
+        "php54w-gd  ",
+        "php55u-gd  ",
+        "php55w-gd  ",
+        "php56u-gd  ",
+        "php56w-gd  "
+      ],
+      "path": "dist/RPMS/i686/php-gd-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-gd = 5.6.40-47.3.el6.local",
+        "php-gd(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libX11.so.6  ",
+        "libXpm.so.4  ",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.11)  ",
+        "libc.so.6(GLIBC_2.3)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libc.so.6(GLIBC_2.7)  ",
+        "libfreetype.so.6  ",
+        "libjpeg.so.62  ",
+        "libjpeg.so.62(LIBJPEG_6.2)  ",
+        "libpng12.so.0  ",
+        "libpng12.so.0(PNG12_0)  ",
+        "libpthread.so.0  ",
+        "libpthread.so.0(GLIBC_2.0)  ",
+        "libt1.so.5  ",
+        "libvpx.so.1  ",
+        "libz.so.1  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/20-gmp.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-gmp.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/gmp.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/gmp.so": {
+          "flags": 0,
+          "mode": 33261
+        }
+      },
+      "name": "php-gmp",
+      "obsoletes": [
+        "php53-gmp  ",
+        "php53u-gmp  ",
+        "php54-gmp  ",
+        "php54w-gmp  ",
+        "php55u-gmp  ",
+        "php55w-gmp  ",
+        "php56u-gmp  ",
+        "php56w-gmp  "
+      ],
+      "path": "dist/RPMS/i686/php-gmp-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-gmp = 5.6.40-47.3.el6.local",
+        "php-gmp(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libgmp.so.3  ",
+        "libpthread.so.0  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/20-imap.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-imap.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/imap.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/imap.so": {
+          "flags": 0,
+          "mode": 33261
+        }
+      },
+      "name": "php-imap",
+      "obsoletes": [
+        "mod_php3-imap  ",
+        "stronghold-php-imap  ",
+        "php53-imap  ",
+        "php53u-imap  ",
+        "php54-imap  ",
+        "php54w-imap  ",
+        "php55u-imap  ",
+        "php55w-imap  ",
+        "php56u-imap  ",
+        "php56w-imap  "
+      ],
+      "path": "dist/RPMS/i686/php-imap-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-imap = 5.6.40-47.3.el6.local",
+        "php-imap(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc-client.so.2007  ",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.3)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libcom_err.so.2  ",
+        "libcrypt.so.1  ",
+        "libcrypto.so.10  ",
+        "libgssapi_krb5.so.2  ",
+        "libk5crypto.so.3  ",
+        "libkrb5.so.3  ",
+        "libpam.so.0  ",
+        "libpthread.so.0  ",
+        "libssl.so.10  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/20-interbase.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/30-pdo_firebird.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-interbase.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/30-pdo_firebird.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/interbase.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/pdo_firebird.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/interbase.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/pdo_firebird.so": {
+          "flags": 0,
+          "mode": 33261
+        }
+      },
+      "name": "php-interbase",
+      "obsoletes": [
+        "php53-interbase  ",
+        "php53u-interbase  ",
+        "php54-interbase  ",
+        "php54w-interbase  ",
+        "php55u-interbase  ",
+        "php55w-interbase  ",
+        "php56u-interbase  ",
+        "php56w-interbase  "
+      ],
+      "path": "dist/RPMS/i686/php-interbase-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php_database  ",
+        "php-firebird  ",
+        "php-firebird(x86-32)  ",
+        "php-pdo_firebird  ",
+        "php-pdo_firebird(x86-32)  ",
+        "php-interbase = 5.6.40-47.3.el6.local",
+        "php-interbase(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-pdo(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.3)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libfbclient.so.2  ",
+        "libpthread.so.0  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/20-intl.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-intl.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/intl.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/intl.so": {
+          "flags": 0,
+          "mode": 33261
+        }
+      },
+      "name": "php-intl",
+      "obsoletes": [
+        "php53-intl  ",
+        "php53u-intl  ",
+        "php54-intl  ",
+        "php54w-intl  ",
+        "php55u-intl  ",
+        "php55w-intl  ",
+        "php56u-intl  ",
+        "php56w-intl  "
+      ],
+      "path": "dist/RPMS/i686/php-intl-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-intl = 5.6.40-47.3.el6.local",
+        "php-intl(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.3)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libgcc_s.so.1  ",
+        "libgcc_s.so.1(GCC_3.0)  ",
+        "libicudata.so.42  ",
+        "libicui18n.so.42  ",
+        "libicuio.so.42  ",
+        "libicuuc.so.42  ",
+        "libm.so.6  ",
+        "libpthread.so.0  ",
+        "libpthread.so.0(GLIBC_2.0)  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/20-ldap.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-ldap.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/ldap.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/ldap.so": {
+          "flags": 0,
+          "mode": 33261
+        }
+      },
+      "name": "php-ldap",
+      "obsoletes": [
+        "php53-ldap  ",
+        "php53u-ldap  ",
+        "php54-ldap  ",
+        "php54w-ldap  ",
+        "php55u-ldap  ",
+        "php55w-ldap  ",
+        "php56u-ldap  ",
+        "php56w-ldap  "
+      ],
+      "path": "dist/RPMS/i686/php-ldap-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-ldap = 5.6.40-47.3.el6.local",
+        "php-ldap(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "liblber-2.4.so.2  ",
+        "libldap-2.4.so.2  ",
+        "libpthread.so.0  ",
+        "libpthread.so.0(GLIBC_2.0)  ",
+        "libsasl2.so.2  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/usr/bin/lsphp": {
+          "flags": 0,
+          "mode": 33261
+        }
+      },
+      "name": "php-litespeed",
+      "obsoletes": [
+        "php53-litespeed  ",
+        "php53u-litespeed  ",
+        "php54-litespeed  ",
+        "php54w-litespeed  ",
+        "php55u-litespeed  ",
+        "php55w-litespeed  ",
+        "php56u-litespeed  ",
+        "php56w-litespeed  "
+      ],
+      "path": "dist/RPMS/i686/php-litespeed-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-litespeed = 5.6.40-47.3.el6.local",
+        "php-litespeed(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1)  ",
+        "libc.so.6(GLIBC_2.11)  ",
+        "libc.so.6(GLIBC_2.2)  ",
+        "libc.so.6(GLIBC_2.2.3)  ",
+        "libc.so.6(GLIBC_2.3)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libc.so.6(GLIBC_2.7)  ",
+        "libc.so.6(GLIBC_2.8)  ",
+        "libcom_err.so.2  ",
+        "libcrypt.so.1  ",
+        "libcrypto.so.10  ",
+        "libcrypto.so.10(OPENSSL_1.0.1)  ",
+        "libcrypto.so.10(OPENSSL_1.0.1_EC)  ",
+        "libcrypto.so.10(libcrypto.so.10)  ",
+        "libdl.so.2  ",
+        "libdl.so.2(GLIBC_2.0)  ",
+        "libdl.so.2(GLIBC_2.1)  ",
+        "libgssapi_krb5.so.2  ",
+        "libk5crypto.so.3  ",
+        "libkrb5.so.3  ",
+        "libm.so.6  ",
+        "libm.so.6(GLIBC_2.0)  ",
+        "libm.so.6(GLIBC_2.1)  ",
+        "libnsl.so.1  ",
+        "libresolv.so.2  ",
+        "libresolv.so.2(GLIBC_2.0)  ",
+        "libresolv.so.2(GLIBC_2.2)  ",
+        "librt.so.1  ",
+        "libssl.so.10  ",
+        "libssl.so.10(libssl.so.10)  ",
+        "libxml2.so.2  ",
+        "libxml2.so.2(LIBXML2_2.4.30)  ",
+        "libxml2.so.2(LIBXML2_2.5.2)  ",
+        "libxml2.so.2(LIBXML2_2.6.0)  ",
+        "libxml2.so.2(LIBXML2_2.6.11)  ",
+        "libz.so.1  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/20-mbstring.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-mbstring.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/mbstring.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/mbstring.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/share/doc/php-mbstring-5.6.40": {
+          "flags": 0,
+          "mode": 16877
+        },
+        "/usr/share/doc/php-mbstring-5.6.40/libmbfl_LICENSE": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-mbstring-5.6.40/oniguruma_COPYING": {
+          "flags": 2,
+          "mode": 33188
+        },
+        "/usr/share/doc/php-mbstring-5.6.40/ucgendat_LICENSE": {
+          "flags": 2,
+          "mode": 33188
+        }
+      },
+      "name": "php-mbstring",
+      "obsoletes": [
+        "php53-mbstring  ",
+        "php53u-mbstring  ",
+        "php54-mbstring  ",
+        "php54w-mbstring  ",
+        "php55u-mbstring  ",
+        "php55w-mbstring  ",
+        "php56u-mbstring  ",
+        "php56w-mbstring  "
+      ],
+      "path": "dist/RPMS/i686/php-mbstring-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-mbstring = 5.6.40-47.3.el6.local",
+        "php-mbstring(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.3)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libpthread.so.0  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/20-mcrypt.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-mcrypt.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/mcrypt.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/mcrypt.so": {
+          "flags": 0,
+          "mode": 33261
+        }
+      },
+      "name": "php-mcrypt",
+      "obsoletes": [
+        "php53-mcrypt  ",
+        "php53u-mcrypt  ",
+        "php54-mcrypt  ",
+        "php54w-mcrypt  ",
+        "php55u-mcrypt  ",
+        "php55w-mcrypt  ",
+        "php56u-mcrypt  ",
+        "php56w-mcrypt  "
+      ],
+      "path": "dist/RPMS/i686/php-mcrypt-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-mcrypt = 5.6.40-47.3.el6.local",
+        "php-mcrypt(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libltdl.so.7  ",
+        "libmcrypt.so.4  ",
+        "libpthread.so.0  ",
+        "libpthread.so.0(GLIBC_2.0)  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/20-mssql.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/20-sybase_ct.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/30-pdo_dblib.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-mssql.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-sybase_ct.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/30-pdo_dblib.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/mssql.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/pdo_dblib.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/sybase_ct.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/mssql.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/pdo_dblib.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/sybase_ct.so": {
+          "flags": 0,
+          "mode": 33261
+        }
+      },
+      "name": "php-mssql",
+      "obsoletes": [
+        "php53-mssql  ",
+        "php53u-mssql  ",
+        "php54-mssql  ",
+        "php54w-mssql  ",
+        "php55u-mssql  ",
+        "php55w-mssql  ",
+        "php56u-mssql  ",
+        "php56w-mssql  "
+      ],
+      "path": "dist/RPMS/i686/php-mssql-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-pdo_dblib  ",
+        "php-pdo_dblib(x86-32)  ",
+        "php-sybase_ct  ",
+        "php-sybase_ct(x86-32)  ",
+        "php-mssql = 5.6.40-47.3.el6.local",
+        "php-mssql(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-pdo(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libct.so.4  ",
+        "libpthread.so.0  ",
+        "libpthread.so.0(GLIBC_2.0)  ",
+        "libsybdb.so.5  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/20-mysqlnd.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/30-mysql.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/30-mysqli.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/30-pdo_mysql.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-mysqlnd.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/30-mysql.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/30-mysqli.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/30-pdo_mysql.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/mysql.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/mysqli.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/mysqlnd.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/pdo_mysql.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/mysql.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/mysqli.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/mysqlnd.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/pdo_mysql.so": {
+          "flags": 0,
+          "mode": 33261
+        }
+      },
+      "name": "php-mysqlnd",
+      "obsoletes": [
+        "php-mysql < 5.6.40-47.3.el6.local",
+        "php53-mysqlnd  ",
+        "php53u-mysqlnd  ",
+        "php54-mysqlnd  ",
+        "php54w-mysqlnd  ",
+        "php55u-mysqlnd  ",
+        "php55w-mysqlnd  ",
+        "php56u-mysqlnd  ",
+        "php56w-mysqlnd  ",
+        "php53-mysql  ",
+        "php53u-mysql  ",
+        "php54-mysql  ",
+        "php54w-mysql  ",
+        "php55u-mysql  ",
+        "php55w-mysql  ",
+        "php56u-mysql  ",
+        "php56w-mysql  "
+      ],
+      "path": "dist/RPMS/i686/php-mysqlnd-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php_database  ",
+        "php-mysql = 5.6.40-47.3.el6.local",
+        "php-mysql(x86-32) = 5.6.40-47.3.el6.local",
+        "php-mysqli = 5.6.40-47.3.el6.local",
+        "php-mysqli(x86-32) = 5.6.40-47.3.el6.local",
+        "php-pdo_mysql  ",
+        "php-pdo_mysql(x86-32)  ",
+        "php-mysqlnd = 5.6.40-47.3.el6.local",
+        "php-mysqlnd(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-pdo(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(VersionedDependencies) <= 3.0.3-1",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libpthread.so.0  ",
+        "libpthread.so.0(GLIBC_2.0)  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/20-odbc.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/30-pdo_odbc.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-odbc.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/30-pdo_odbc.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/odbc.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/pdo_odbc.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/odbc.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/pdo_odbc.so": {
+          "flags": 0,
+          "mode": 33261
+        }
+      },
+      "name": "php-odbc",
+      "obsoletes": [
+        "php53-odbc  ",
+        "php53u-odbc  ",
+        "php54-odbc  ",
+        "php54w-odbc  ",
+        "php55u-odbc  ",
+        "php55w-odbc  ",
+        "php56u-odbc  ",
+        "php56w-odbc  "
+      ],
+      "path": "dist/RPMS/i686/php-odbc-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php_database  ",
+        "php-pdo_odbc  ",
+        "php-pdo_odbc(x86-32)  ",
+        "php-odbc = 5.6.40-47.3.el6.local",
+        "php-odbc(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-pdo(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libodbc.so.2  ",
+        "libpthread.so.0  ",
+        "libpthread.so.0(GLIBC_2.0)  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/10-opcache.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/opcache-default.blacklist": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/10-opcache.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/opcache-default.blacklist": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/opcache.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/opcache.so": {
+          "flags": 0,
+          "mode": 33261
+        }
+      },
+      "name": "php-opcache",
+      "obsoletes": [
+        "php-pecl-zendopcache  ",
+        "php55u-opcache  ",
+        "php55w-opcache  ",
+        "php56u-opcache  ",
+        "php56w-opcache  "
+      ],
+      "path": "dist/RPMS/i686/php-opcache-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-pecl-zendopcache = 7.0.6-dev",
+        "php-pecl-zendopcache(x86-32) = 7.0.6-dev",
+        "php-pecl(opcache) = 7.0.6-dev",
+        "php-pecl(opcache)(x86-32) = 7.0.6-dev",
+        "php-opcache = 5.6.40-47.3.el6.local",
+        "php-opcache(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(VersionedDependencies) <= 3.0.3-1",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.2)  ",
+        "libc.so.6(GLIBC_2.3)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libpthread.so.0  ",
+        "libpthread.so.0(GLIBC_2.0)  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/20-pdo.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/20-sqlite3.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/30-pdo_sqlite.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-pdo.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-sqlite3.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/30-pdo_sqlite.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/pdo.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/pdo_sqlite.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/sqlite3.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/pdo.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/pdo_sqlite.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/sqlite3.so": {
+          "flags": 0,
+          "mode": 33261
+        }
+      },
+      "name": "php-pdo",
+      "obsoletes": [
+        "php53-pdo  ",
+        "php53u-pdo  ",
+        "php54-pdo  ",
+        "php54w-pdo  ",
+        "php55u-pdo  ",
+        "php55w-pdo  ",
+        "php56u-pdo  ",
+        "php56w-pdo  "
+      ],
+      "path": "dist/RPMS/i686/php-pdo-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-pdo-abi = 20080721-32",
+        "php(pdo-abi) = 20080721-32",
+        "php-sqlite3  ",
+        "php-sqlite3(x86-32)  ",
+        "php-pdo_sqlite  ",
+        "php-pdo_sqlite(x86-32)  ",
+        "php-pdo = 5.6.40-47.3.el6.local",
+        "php-pdo(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(VersionedDependencies) <= 3.0.3-1",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.3)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libpthread.so.0  ",
+        "librt.so.1  ",
+        "libsqlite3.so.0  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/20-pgsql.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/30-pdo_pgsql.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-pgsql.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/30-pdo_pgsql.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/pdo_pgsql.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/pgsql.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/pdo_pgsql.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/pgsql.so": {
+          "flags": 0,
+          "mode": 33261
+        }
+      },
+      "name": "php-pgsql",
+      "obsoletes": [
+        "php53-pgsql  ",
+        "php53u-pgsql  ",
+        "php54-pgsql  ",
+        "php54w-pgsql  ",
+        "php55u-pgsql  ",
+        "php55w-pgsql  ",
+        "php56u-pgsql  ",
+        "php56w-pgsql  "
+      ],
+      "path": "dist/RPMS/i686/php-pgsql-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php_database  ",
+        "php-pdo_pgsql  ",
+        "php-pdo_pgsql(x86-32)  ",
+        "php-pgsql = 5.6.40-47.3.el6.local",
+        "php-pgsql(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-pdo(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libpq.so.5  ",
+        "libpthread.so.0  ",
+        "libpthread.so.0(GLIBC_2.0)  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/20-posix.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/20-shmop.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/20-sysvmsg.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/20-sysvsem.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/20-sysvshm.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-posix.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-shmop.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-sysvmsg.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-sysvsem.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-sysvshm.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/posix.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/shmop.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/sysvmsg.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/sysvsem.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/sysvshm.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/posix.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/shmop.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/sysvmsg.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/sysvsem.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/sysvshm.so": {
+          "flags": 0,
+          "mode": 33261
+        }
+      },
+      "name": "php-process",
+      "obsoletes": [
+        "php53-process  ",
+        "php53u-process  ",
+        "php54-process  ",
+        "php54w-process  ",
+        "php55u-process  ",
+        "php55w-process  ",
+        "php56u-process  ",
+        "php56w-process  "
+      ],
+      "path": "dist/RPMS/i686/php-process-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-posix  ",
+        "php-posix(x86-32)  ",
+        "php-shmop  ",
+        "php-shmop(x86-32)  ",
+        "php-sysvsem  ",
+        "php-sysvsem(x86-32)  ",
+        "php-sysvshm  ",
+        "php-sysvshm(x86-32)  ",
+        "php-sysvmsg  ",
+        "php-sysvmsg(x86-32)  ",
+        "php-process = 5.6.40-47.3.el6.local",
+        "php-process(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1.2)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.2)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libpthread.so.0  ",
+        "libpthread.so.0(GLIBC_2.0)  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/20-pspell.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-pspell.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/pspell.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/pspell.so": {
+          "flags": 0,
+          "mode": 33261
+        }
+      },
+      "name": "php-pspell",
+      "obsoletes": [
+        "php53-pspell  ",
+        "php53u-pspell  ",
+        "php54-pspell  ",
+        "php54w-pspell  ",
+        "php55u-pspell  ",
+        "php55w-pspell  ",
+        "php56u-pspell  ",
+        "php56w-pspell  "
+      ],
+      "path": "dist/RPMS/i686/php-pspell-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-pspell = 5.6.40-47.3.el6.local",
+        "php-pspell(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libaspell.so.15  ",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libpspell.so.15  ",
+        "libpthread.so.0  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/20-recode.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-recode.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/recode.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/recode.so": {
+          "flags": 0,
+          "mode": 33261
+        }
+      },
+      "name": "php-recode",
+      "obsoletes": [
+        "php53-recode  ",
+        "php53u-recode  ",
+        "php54-recode  ",
+        "php54w-recode  ",
+        "php55u-recode  ",
+        "php55w-recode  ",
+        "php56u-recode  ",
+        "php56w-recode  "
+      ],
+      "path": "dist/RPMS/i686/php-recode-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-recode = 5.6.40-47.3.el6.local",
+        "php-recode(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libpthread.so.0  ",
+        "librecode.so.0  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/20-snmp.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-snmp.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/snmp.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/snmp.so": {
+          "flags": 0,
+          "mode": 33261
+        }
+      },
+      "name": "php-snmp",
+      "obsoletes": [
+        "php53-snmp  ",
+        "php53u-snmp  ",
+        "php54-snmp  ",
+        "php54w-snmp  ",
+        "php55u-snmp  ",
+        "php55w-snmp  ",
+        "php56u-snmp  ",
+        "php56w-snmp  "
+      ],
+      "path": "dist/RPMS/i686/php-snmp-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-snmp = 5.6.40-47.3.el6.local",
+        "php-snmp(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "net-snmp  ",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libnetsnmp.so.20  ",
+        "libpthread.so.0  ",
+        "libpthread.so.0(GLIBC_2.0)  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/20-soap.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-soap.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/soap.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/soap.so": {
+          "flags": 0,
+          "mode": 33261
+        }
+      },
+      "name": "php-soap",
+      "obsoletes": [
+        "php53-soap  ",
+        "php53u-soap  ",
+        "php54-soap  ",
+        "php54w-soap  ",
+        "php55u-soap  ",
+        "php55w-soap  ",
+        "php56u-soap  ",
+        "php56w-soap  "
+      ],
+      "path": "dist/RPMS/i686/php-soap-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-soap = 5.6.40-47.3.el6.local",
+        "php-soap(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libm.so.6  ",
+        "libpthread.so.0  ",
+        "libpthread.so.0(GLIBC_2.0)  ",
+        "libxml2.so.2  ",
+        "libxml2.so.2(LIBXML2_2.4.30)  ",
+        "libxml2.so.2(LIBXML2_2.5.7)  ",
+        "libxml2.so.2(LIBXML2_2.6.0)  ",
+        "libz.so.1  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/20-tidy.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-tidy.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/tidy.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/tidy.so": {
+          "flags": 0,
+          "mode": 33261
+        }
+      },
+      "name": "php-tidy",
+      "obsoletes": [
+        "php53-tidy  ",
+        "php53u-tidy  ",
+        "php54-tidy  ",
+        "php54w-tidy  ",
+        "php55u-tidy  ",
+        "php55w-tidy  ",
+        "php56u-tidy  ",
+        "php56w-tidy  "
+      ],
+      "path": "dist/RPMS/i686/php-tidy-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-tidy = 5.6.40-47.3.el6.local",
+        "php-tidy(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libpthread.so.0  ",
+        "libtidy-0.99.so.0  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/20-dom.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/20-simplexml.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/20-xml.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/20-xmlwriter.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/20-xsl.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/30-wddx.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php-zts.d/30-xmlreader.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-dom.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-simplexml.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-xml.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-xmlwriter.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/20-xsl.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/30-wddx.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/30-xmlreader.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/dom.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/simplexml.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/wddx.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/xml.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/xmlreader.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/xmlwriter.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php-zts/modules/xsl.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/dom.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/simplexml.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/wddx.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/xml.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/xmlreader.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/xmlwriter.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/xsl.so": {
+          "flags": 0,
+          "mode": 33261
+        }
+      },
+      "name": "php-xml",
+      "obsoletes": [
+        "php53-xml  ",
+        "php53u-xml  ",
+        "php54-xml  ",
+        "php54w-xml  ",
+        "php55u-xml  ",
+        "php55w-xml  ",
+        "php56u-xml  ",
+        "php56w-xml  "
+      ],
+      "path": "dist/RPMS/i686/php-xml-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-dom  ",
+        "php-dom(x86-32)  ",
+        "php-domxml  ",
+        "php-domxml(x86-32)  ",
+        "php-simplexml  ",
+        "php-simplexml(x86-32)  ",
+        "php-wddx  ",
+        "php-wddx(x86-32)  ",
+        "php-xmlreader  ",
+        "php-xmlreader(x86-32)  ",
+        "php-xmlwriter  ",
+        "php-xmlwriter(x86-32)  ",
+        "php-xsl  ",
+        "php-xsl(x86-32)  ",
+        "php-xml = 5.6.40-47.3.el6.local",
+        "php-xml(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-common(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libexslt.so.0  ",
+        "libm.so.6  ",
+        "libpthread.so.0  ",
+        "libxml2.so.2  ",
+        "libxml2.so.2(LIBXML2_2.4.30)  ",
+        "libxml2.so.2(LIBXML2_2.5.0)  ",
+        "libxml2.so.2(LIBXML2_2.5.2)  ",
+        "libxml2.so.2(LIBXML2_2.5.4)  ",
+        "libxml2.so.2(LIBXML2_2.5.7)  ",
+        "libxml2.so.2(LIBXML2_2.5.8)  ",
+        "libxml2.so.2(LIBXML2_2.5.9)  ",
+        "libxml2.so.2(LIBXML2_2.6.0)  ",
+        "libxml2.so.2(LIBXML2_2.6.14)  ",
+        "libxml2.so.2(LIBXML2_2.6.15)  ",
+        "libxml2.so.2(LIBXML2_2.6.20)  ",
+        "libxml2.so.2(LIBXML2_2.6.23)  ",
+        "libxml2.so.2(LIBXML2_2.6.28)  ",
+        "libxml2.so.2(LIBXML2_2.6.3)  ",
+        "libxml2.so.2(LIBXML2_2.6.5)  ",
+        "libxml2.so.2(LIBXML2_2.6.7)  ",
+        "libxml2.so.2(LIBXML2_2.6.8)  ",
+        "libxslt.so.1  ",
+        "libxslt.so.1(LIBXML2_1.0.11)  ",
+        "libxslt.so.1(LIBXML2_1.0.13)  ",
+        "libxslt.so.1(LIBXML2_1.0.18)  ",
+        "libxslt.so.1(LIBXML2_1.0.22)  ",
+        "libxslt.so.1(LIBXML2_1.0.24)  ",
+        "libz.so.1  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    },
+    {
+      "arch": "i686",
+      "conflicts": [],
+      "files": {
+        "/etc/php-zts.d/30-xmlrpc.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/etc/php.d/30-xmlrpc.ini": {
+          "flags": 17,
+          "mode": 33188
+        },
+        "/usr/lib/php-zts/modules/xmlrpc.so": {
+          "flags": 0,
+          "mode": 33261
+        },
+        "/usr/lib/php/modules/xmlrpc.so": {
+          "flags": 0,
+          "mode": 33261
+        }
+      },
+      "name": "php-xmlrpc",
+      "obsoletes": [
+        "php53-xmlrpc  ",
+        "php53u-xmlrpc  ",
+        "php54-xmlrpc  ",
+        "php54w-xmlrpc  ",
+        "php55u-xmlrpc  ",
+        "php55w-xmlrpc  ",
+        "php56u-xmlrpc  ",
+        "php56w-xmlrpc  "
+      ],
+      "path": "dist/RPMS/i686/php-xmlrpc-5.6.40-47.3.el6.local.i686.rpm",
+      "provides": [
+        "php-xmlrpc = 5.6.40-47.3.el6.local",
+        "php-xmlrpc(x86-32) = 5.6.40-47.3.el6.local"
+      ],
+      "release": "47.3.el6.local",
+      "requires": [
+        "php-xml(x86-32) = 5.6.40-47.3.el6.local",
+        "rpmlib(FileDigests) <= 4.6.0-1",
+        "rpmlib(PayloadFilesHavePrefix) <= 4.0-1",
+        "rpmlib(CompressedFileNames) <= 3.0.4-1",
+        "libc.so.6  ",
+        "libc.so.6(GLIBC_2.0)  ",
+        "libc.so.6(GLIBC_2.1)  ",
+        "libc.so.6(GLIBC_2.1.3)  ",
+        "libc.so.6(GLIBC_2.3)  ",
+        "libc.so.6(GLIBC_2.3.4)  ",
+        "libc.so.6(GLIBC_2.4)  ",
+        "libm.so.6  ",
+        "libpthread.so.0  ",
+        "libpthread.so.0(GLIBC_2.0)  ",
+        "libxml2.so.2  ",
+        "libz.so.1  ",
+        "rtld(GNU_HASH)  ",
+        "rpmlib(PayloadIsXz) <= 5.2-1"
+      ],
+      "scriptlets": "",
+      "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+      "version": "5.6.40"
+    }
+  ],
+  "release": "5.6.40-47.3.el6.local"
+}

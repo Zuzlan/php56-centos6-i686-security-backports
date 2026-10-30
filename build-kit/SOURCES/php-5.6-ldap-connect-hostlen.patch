@@ -1,0 +1,11 @@
+--- a/ext/ldap/ldap.c
++++ b/ext/ldap/ldap.c
+@@ -322,7 +322,7 @@
+ PHP_FUNCTION(ldap_connect)
+ {
+ 	char *host = NULL;
+-	int hostlen;
++	int hostlen = 0;
+ 	long port = LDAP_PORT;
+ #ifdef HAVE_ORALDAP
+ 	char *wallet = NULL, *walletpasswd = NULL;

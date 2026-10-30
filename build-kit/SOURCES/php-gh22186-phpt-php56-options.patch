@@ -1,0 +1,27 @@
+--- a/ext/openssl/tests/gh22186.phpt
++++ b/ext/openssl/tests/gh22186.phpt
+@@ -8,19 +8,21 @@
+  * resolves names via the legacy EVP_get_cipherbyname(), so on some builds the
+  * cipher is listed yet not usable. Probe the actual call path instead. */
+ if (!@openssl_encrypt("test", "aes-128-wrap-pad", str_repeat("k", 16),
+-        OPENSSL_RAW_DATA | OPENSSL_DONT_ZERO_PAD_KEY, str_repeat("\0", 4))) {
++        OPENSSL_RAW_DATA, str_repeat("\0", 4))) {
+     die('skip aes-128-wrap-pad not usable on this OpenSSL build');
+ }
+ ?>
+ --FILE--
+ <?php
++/* PHP 5.6 has no OPENSSL_DONT_ZERO_PAD_KEY. The 16-byte AES-128 key
++ * already has the exact required length, so zero-padding is never needed. */
+ $pass = str_repeat("k", 16);
+ $iv = str_repeat("\0", 4);
+ 
+ for ($i = 1; $i < 258; $i++) {
+     $data = str_repeat("a", $i);
+-    $enc = openssl_encrypt($data, 'aes-128-wrap-pad', $pass, OPENSSL_RAW_DATA | OPENSSL_DONT_ZERO_PAD_KEY, $iv);
+-    $dec = openssl_decrypt($enc, 'aes-128-wrap-pad', $pass, OPENSSL_RAW_DATA | OPENSSL_DONT_ZERO_PAD_KEY, $iv);
++    $enc = openssl_encrypt($data, 'aes-128-wrap-pad', $pass, OPENSSL_RAW_DATA, $iv);
++    $dec = openssl_decrypt($enc, 'aes-128-wrap-pad', $pass, OPENSSL_RAW_DATA, $iv);
+     if ($dec !== $data) {
+         die("mismatch at $i\n");
+     }

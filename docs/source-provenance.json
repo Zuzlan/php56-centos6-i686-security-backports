@@ -1,0 +1,506 @@
+{
+  "release": "5.6.40-47.3.el6.local",
+  "author": "Artem Loboda",
+  "website": "https://www.zuzlan.name",
+  "source_rpm": "php-5.6.40-47.3.el6.local.src.rpm",
+  "source_rpm_sha256": "2043ae9a3d23eaa8ea813ae1ca1b8747cec816309968c40bd2bc33a10d44a369",
+  "declared_sources": 18,
+  "declared_patches": 96,
+  "applied_patches": 93,
+  "new_layers": [
+    {
+      "id": 281,
+      "name": "php-5.6-minimal-remicollet.patch",
+      "sha256": "a15040d58f5229867f963e7a81b267ac027f65de9c5f3efe6847ab71845612af",
+      "actual_applications": 1
+    },
+    {
+      "id": 282,
+      "name": "php-5.6-october-lifecycle-correction.patch",
+      "sha256": "c27f6c841e90ecf0cb8df4dc3d67ce2369598a0e99100f8ceb5368675d4e2a1c",
+      "actual_applications": 1
+    },
+    {
+      "id": 283,
+      "name": "php-gh22186-phpt-php56-options.patch",
+      "sha256": "194d416fe8a40a07d685ff10762268dccf2e7b9018a53e14b320d9d28d5dbc5c",
+      "actual_applications": 1
+    },
+    {
+      "id": 284,
+      "name": "php56-test-certificates-2026.patch",
+      "sha256": "c9fddec882c60bc9ee05c9e0a2417a42bb669e4dc39eee854bbf9e0414f9b38a",
+      "actual_applications": 1
+    },
+    {
+      "id": 285,
+      "name": "php-5.6-ldap-connect-hostlen.patch",
+      "sha256": "1cd253c065470e83c2c2319d19b406bf7346c87c75827461be4963a0f21613ba",
+      "actual_applications": 1
+    }
+  ],
+  "source_payload": [
+    {
+      "path": "build-kit/SOURCES/macros.php",
+      "sha256": "0dd7a4d5b084d7b6df1decf34160c69157909c52ead688bf3eb9a76978e304ad"
+    },
+    {
+      "path": "build-kit/SOURCES/nginx-fpm.conf",
+      "sha256": "54432bc051686f00b1685bad91a73f9a2fbe3b650c1fba4e9a4232363c4dfa99"
+    },
+    {
+      "path": "build-kit/SOURCES/nginx-php.conf",
+      "sha256": "88dfe176f02a0f8cba0a91711d1f5075bedbc01d2cdcd149e50890e2c71b3080"
+    },
+    {
+      "path": "build-kit/SOURCES/opcache-default.blacklist",
+      "sha256": "4eef0875e1a0c6a75b8a2bafd4ddc029b83be74dd336a6a99214b0c32808cb38"
+    },
+    {
+      "path": "build-kit/SOURCES/opcache.ini",
+      "sha256": "e2cc0c08d47d781313f332e200d2b8b611d4f2ef3a3b2736d8131df54bd6f30f"
+    },
+    {
+      "path": "build-kit/SOURCES/php-5.3.0-recode.patch",
+      "sha256": "9d974b64d7a5bbefc200b84bbca1f86986c97904932e53c6cd5ce499f55c5526"
+    },
+    {
+      "path": "build-kit/SOURCES/php-5.4.0-dlopen.patch",
+      "sha256": "cc8b98c761bb7203def02794603cc38cdc7ad17ab940d917a18352a83096bfab"
+    },
+    {
+      "path": "build-kit/SOURCES/php-5.4.0-phpize.patch",
+      "sha256": "25a4b9b4b39839b3330f0f6c023f8be8d11932dfdd6f40e5fc0fec2c76441807"
+    },
+    {
+      "path": "build-kit/SOURCES/php-5.5.30-curl.patch",
+      "sha256": "d32ddd6b84352f2bb2d1dd97c6f0ade86459ec9b25286e162dd5552b25d92eb6"
+    },
+    {
+      "path": "build-kit/SOURCES/php-5.6-ldap-connect-hostlen.patch",
+      "sha256": "1cd253c065470e83c2c2319d19b406bf7346c87c75827461be4963a0f21613ba"
+    },
+    {
+      "path": "build-kit/SOURCES/php-5.6-minimal-remicollet.patch",
+      "sha256": "a15040d58f5229867f963e7a81b267ac027f65de9c5f3efe6847ab71845612af"
+    },
+    {
+      "path": "build-kit/SOURCES/php-5.6-october-lifecycle-correction.patch",
+      "sha256": "c27f6c841e90ecf0cb8df4dc3d67ce2369598a0e99100f8ceb5368675d4e2a1c"
+    },
+    {
+      "path": "build-kit/SOURCES/php-5.6.0-oldpcre.patch",
+      "sha256": "eaa9253fe724053db156f61b48ef17ebd191ac8890435313c26ef740a7658758"
+    },
+    {
+      "path": "build-kit/SOURCES/php-5.6.13-systzdata-v12.patch",
+      "sha256": "56ac688b24d85f52699cbaa3936cdc317e37bc54a6a3763f660ae71c4e1cf0ae"
+    },
+    {
+      "path": "build-kit/SOURCES/php-5.6.17-libdb.patch",
+      "sha256": "2c427f2d575880ee69e38e7a3f06e43c2f7b984167c97265891ea82a2b5ded1c"
+    },
+    {
+      "path": "build-kit/SOURCES/php-5.6.3-embed.patch",
+      "sha256": "1976e2fa5328bc465b5f690cb2935cacfdd2bb5d794fedba26b4533ccdb47932"
+    },
+    {
+      "path": "build-kit/SOURCES/php-5.6.3-fixheader.patch",
+      "sha256": "2bf6c21a993ae161820c5fdc1d760afa48fd3fd24ecca82761c55270e15d3087"
+    },
+    {
+      "path": "build-kit/SOURCES/php-5.6.3-includedir.patch",
+      "sha256": "8fc53b169ec1391a396c798a06e9ec00d572e05539844f1fa5a9995ea46b91cd"
+    },
+    {
+      "path": "build-kit/SOURCES/php-5.6.3-ldap_r.patch",
+      "sha256": "57ead392bbd87aba5a8925516a2f5b05fa1aec1c3574290972a4847b31aa44a5"
+    },
+    {
+      "path": "build-kit/SOURCES/php-5.6.3-oci8conf.patch",
+      "sha256": "17d940a93fc71d3c194ffb7cd17fe4045c6accddfd8bcb4e67f656e1c743c9cf"
+    },
+    {
+      "path": "build-kit/SOURCES/php-5.6.3-phpinfo.patch",
+      "sha256": "c0097ad33f8aeb12d55ee94db96e73a4eeeff768c95cdcea29d62808afb87619"
+    },
+    {
+      "path": "build-kit/SOURCES/php-5.6.30-datetests.patch",
+      "sha256": "2a52577762017765dd8485c9c4308492c7905d8fdfe2c77f984a179d2fd3c479"
+    },
+    {
+      "path": "build-kit/SOURCES/php-5.6.30-dtrace.patch",
+      "sha256": "d95214f5764f0ff785fb95f8b4dc13c6f854a5f8b4d317b775aad487782d1323"
+    },
+    {
+      "path": "build-kit/SOURCES/php-5.6.31-oci.patch",
+      "sha256": "5eb408b5f8028d93f466a2303910039c3984e36da63f47c59e61b525ad0487c4"
+    },
+    {
+      "path": "build-kit/SOURCES/php-5.6.37-icu62.patch",
+      "sha256": "0e5c443806767dfe909f2c0e553bbb728f4e5fb59277e25bcb24e736ed3f2132"
+    },
+    {
+      "path": "build-kit/SOURCES/php-5.6.40-strip.tar.xz",
+      "sha256": "4ea784f18c225fd3bb9b2477b42051119b289038e16df840bd4249784f875590"
+    },
+    {
+      "path": "build-kit/SOURCES/php-7.1.7-httpd.patch",
+      "sha256": "ed4b6ac5a604aaf02eb2d7dacde4840f6fa9a30513002d5a1f6f592a10f2facf"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug75457.patch",
+      "sha256": "6066f2ca3878eca18822319489ee2d8a72929185d0e9f5a0f6b313159bb754ed"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug76450.patch",
+      "sha256": "5142377dc3351945ec77fbb11433b1d55b5e7d7bb7fe039ed21815eadbb9f4ef"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug76846.patch",
+      "sha256": "128a8b6b875df388286964bc82ae5ebc7ed65aa79178e55f4a091332963fc273"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug77396.patch",
+      "sha256": "019f4711f2b05627b6c7a01c059839a8cc73b436d2bdf41dade5997dc3411ef7"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug77423.patch",
+      "sha256": "72f84382b64dec686daacc85b4ff7941ad84709f828e5ab6c8e872e4244d5977"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug77431.patch",
+      "sha256": "d5a7828d5cf3cb3d5c81ec7719dd477e1b6cfd072715d755a59058f482df797a"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug77540.patch",
+      "sha256": "66b73ea6322f089a23a6cd5ef52098bb253c5ce7c283217cee68a0e72dc6581d"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug77563.patch",
+      "sha256": "81e1b5101ea1156cdcf4ad842c0e7b1a83c50c9e5bf23bce50e6151a68f63e6e"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug77586.patch",
+      "sha256": "070740012878943f54187e690b28e07d46743cc4fe53925acd59f30782b3e8e6"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug77630.patch",
+      "sha256": "d3f98f87cde29bec6f9c591ace443690b6692f9bebadd3d440ecf6196a599434"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug77753.patch",
+      "sha256": "b524636fc2d57b863484a55ad2a3d8402efc5d6ba843335f91d2375fc043984a"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug77831.patch",
+      "sha256": "e7a1bd8405808466eecd99986964a2dcd25968ee2aaff9e4b44711af3b189326"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug77919.patch",
+      "sha256": "72bedb40eb09fc51d13ebe4b8cef785f8fb25ba21fa77a230d46be1eabb05cd4"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug77950.patch",
+      "sha256": "e7f2ef93833b2300fe86d70c8ace904aad54dfb35eebf09da5cf2d1166cf31cb"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug77967.patch",
+      "sha256": "1e11520ca75d1903a27c6244a2478dfa935a878f1137e7edac09753d9f642587"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug77988.patch",
+      "sha256": "008032d547f70f653d76050fc9ba5a5274015d62d18d41e7ee8e71ddc8794fa0"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug78069.patch",
+      "sha256": "c32ada684e2037441aee7cce9416d5d49a645f3408b76b8d888a24a269f05f5b"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug78222.patch",
+      "sha256": "e41785e2d3ee4dd8c3445045622159695077eb894e968f033919e5a7e83bcb48"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug78256.patch",
+      "sha256": "f22f2f11017f05b9baafa46d7fc42ef98ed68bc5a5fcf6b54b3e00caf4e98dc0"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug78380.patch",
+      "sha256": "a5da924a3a04687f3aaa4f05b5b0d1b4cac1cdd01010ca6b0ed5c0b7f5e080c1"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug78599.patch",
+      "sha256": "6867c523fcdd29ca3fc4eb81ef72d3b70135341bc81d717ae39c778863923a35"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug78793.patch",
+      "sha256": "7c19c774a502993900742c9a9d3c2084ef7278a01a6c2746e05d2b626a5aed2a"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug78862.patch",
+      "sha256": "0c2ef9cb3ddb3b0a0bb5536fffc37c3a14985414d9bb77cc5bcc9ba41b0ec414"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug78863.patch",
+      "sha256": "9740ba15f57d0a01da3d9d142793abc2348e1eef14197f27485b3310d315d839"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug78875.patch",
+      "sha256": "7842e8da74f91d9b0367a9694ed320afa4ac0d50d10ccb07f70148213dc18d2d"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug78878.patch",
+      "sha256": "5311e4faa08921eab2dd41a93783db3e0dac7abbb4bb93e960e6e7ec2943e673"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug78910.patch",
+      "sha256": "58098e458172b4b447b805a35131cfa9e56508da584667c64010c3ea7959e5da"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug79037.patch",
+      "sha256": "8808919da722957512707086389bd6c710efefbc56fb7c8ed4b9ffdc213f45c1"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug79082.patch",
+      "sha256": "e6e0e279b9fce5c1eeb0a356ff8d04fbde3ff01cf5f9927d241c03561143e357"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug79099.patch",
+      "sha256": "d30c7e93772ac98f879eb95610fa2ccb33c1fc2cb2a68e55373fe8bb8074b823"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug79221.patch",
+      "sha256": "bfcf3c7f7944ea3e1678b47a7531d31d1e956af3b0140bbca30d2bf929dedeef"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug79282.patch",
+      "sha256": "b88976b2619588228554ec62e66810888a7c0020325183ddf92d40cb78ea24ee"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug79329.patch",
+      "sha256": "8bcf1a65caee5bbb08230a438f32ceb440f24fae32c0ee5342f941a944606b69"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug79330.patch",
+      "sha256": "29a36d90cb3c53f2c30817e8477d2f67d833168645fd6980683c64a3da4b6e53"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug79465.patch",
+      "sha256": "7066b825e85f599a33bff4a0942b827a51d28aee5a0bffaf09555ac324680602"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug79699.patch",
+      "sha256": "dbc7ae22c0c91141c7755ef8008b8b4abcc863d83c71f7ec4dc6b263ef0cbd19"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug79797.patch",
+      "sha256": "452b7171dde96d39d6436ea03b492c47d54784c156a0c67e3e763abce792a9c4"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug79877.patch",
+      "sha256": "b221de5c1e0754da0a532801149893330a60792ea183d1d3c0109e701e2258dd"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug79971.patch",
+      "sha256": "bfde3ace620292fdad12b605019e106b3b7907412e901128583ac9b145731be6"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug80672.patch",
+      "sha256": "fdf046e64a3beeb98afd607f950488877c427e2ebcef0df865cd37a63b271549"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug80710.patch",
+      "sha256": "1006ee5f6cc6eb2013126766bfa318b759233b4256ab9528729d8fc16f698613"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug81026.patch",
+      "sha256": "3b18c8748d902e62496c2f1fc9378b8fdc95b87f134c137eebb4ca59c80551c3"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug81122.patch",
+      "sha256": "17582c8b72710bba254a664c2f6863c9b3f3aa0d8a6b085fad6b928a57d4421f"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug81211.patch",
+      "sha256": "5f49772824ae7464071c7681c808d6820525428017c3ae12497557bf87b93684"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug81719.patch",
+      "sha256": "27e19e4b57b129a90070faf0d0e75c9548ce51014710f5b18724f0adedb07041"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug81720.patch",
+      "sha256": "5b70bcc19fa45e82ae61a08ed8a241565b415e7fd8b2f1c16d46fd0838798107"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug81726.patch",
+      "sha256": "85e710767584d3dddfda7f4d7e6564fe4bc4060b3c0d38cb2ef1e97457cc4e00"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug81727.patch",
+      "sha256": "fad712f0c1ac915910cd1883aba6e305f3d0d33dae4d2eb22ba544484fa47691"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug81740.patch",
+      "sha256": "9d120a92966b4c1fb8d62a23e5611ca6082b7983316c9bc26201ac0fa7a2fd25"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug81744.patch",
+      "sha256": "32652cc0b787016284109c6d2719cfd2a14544197f0fbf4f1e282cceceaf058e"
+    },
+    {
+      "path": "build-kit/SOURCES/php-bug81746.patch",
+      "sha256": "27acd0a717701b98a7669f1098571608c387a5cb21d48b8be11579b7e989462b"
+    },
+    {
+      "path": "build-kit/SOURCES/php-cve-2023-0662.patch",
+      "sha256": "cae9dbe8c3b5868e154ee1f58e0693a42b0dc2ddce2715849d1f6352c709c9ac"
+    },
+    {
+      "path": "build-kit/SOURCES/php-cve-2023-3247.patch",
+      "sha256": "c552b8d3abbb4437a2fe523bbec1f7d222587d4ac46e816c8e063a81104c8fb6"
+    },
+    {
+      "path": "build-kit/SOURCES/php-cve-2023-3823.patch",
+      "sha256": "98d27b431760bc87a4c12f1d6ea808aa071021ac5b4f11aeb48ef757d0b8a08b"
+    },
+    {
+      "path": "build-kit/SOURCES/php-cve-2023-3824.patch",
+      "sha256": "d658cb01eecd3ffc953f1d9d51eac325c7037600bb48e3e14d68528ce7568a65"
+    },
+    {
+      "path": "build-kit/SOURCES/php-cve-2024-11233.patch",
+      "sha256": "f7c8eb995698e82b8db4e22fe21a858765520b1bdd1a8e59e0fec63a5ab64da9"
+    },
+    {
+      "path": "build-kit/SOURCES/php-cve-2024-11234.patch",
+      "sha256": "c165b4d1ba5970ae40d9c0ddc93764bbada0d418b17a62f89ccbe9345ce5e50c"
+    },
+    {
+      "path": "build-kit/SOURCES/php-cve-2024-2756.patch",
+      "sha256": "d45ec91be0749576eee2fd6b760cc7fe3bf2d87a790fd63b26a067973bd5af52"
+    },
+    {
+      "path": "build-kit/SOURCES/php-cve-2024-3096.patch",
+      "sha256": "831ef0e835e780a576bb1e8f85b95d3bef0c6ca58e084542515416ce28ea448c"
+    },
+    {
+      "path": "build-kit/SOURCES/php-cve-2024-5458.patch",
+      "sha256": "9f1212bc6d70149ab4755491f0532ad273318d745848f19685337b7c54801355"
+    },
+    {
+      "path": "build-kit/SOURCES/php-cve-2024-8925.patch",
+      "sha256": "93ca003a6e381a2f2f836a48df1644ce56f2db87973e20e7c7b8c28ba520bb0b"
+    },
+    {
+      "path": "build-kit/SOURCES/php-cve-2024-8926.patch",
+      "sha256": "44a29135b3bb15b5ff47781bc8c475ecd0e681e34b59cab5b4882028117f0b4c"
+    },
+    {
+      "path": "build-kit/SOURCES/php-cve-2024-8927.patch",
+      "sha256": "0c708996aed6160b9a17395dbe7d079c7fc3c0b363a1407adb0945786d146e87"
+    },
+    {
+      "path": "build-kit/SOURCES/php-cve-2024-8932.patch",
+      "sha256": "d5f98177c27f516f762ce5b988ad958846cf475f10aaa58be7f8e6175e8d5ac8"
+    },
+    {
+      "path": "build-kit/SOURCES/php-cve-2026-6735.patch",
+      "sha256": "92895631f8b98ade658da0d31ec2ded57033cce9fc86b197a5684812deb5961c"
+    },
+    {
+      "path": "build-kit/SOURCES/php-cve-2026-7261.patch",
+      "sha256": "ec328332d173be535a2ab28d44a571c3a9d9b21965e40c2cf8bd6afd049fb2d4"
+    },
+    {
+      "path": "build-kit/SOURCES/php-cve-2026-7262.patch",
+      "sha256": "79af868372c3cc268818c384b00c9961a30515ee079af512896f276d88a9ce66"
+    },
+    {
+      "path": "build-kit/SOURCES/php-fpm-www.conf",
+      "sha256": "6417275940c44de803b252c699e84d800c7d4462c030cb87383fc2f66310dfe3"
+    },
+    {
+      "path": "build-kit/SOURCES/php-fpm.conf",
+      "sha256": "628d842aa9eadb7c88d7d0b16d53b970812e8078f9ddfd546c2b341e4dd7808a"
+    },
+    {
+      "path": "build-kit/SOURCES/php-fpm.init",
+      "sha256": "ba6207ee9a45b6e6d0c60b0c34c75aaf4f6c40959e33ce5b2a69d528e9859d78"
+    },
+    {
+      "path": "build-kit/SOURCES/php-fpm.logrotate",
+      "sha256": "7d8279bebb9ffabc596a2699150e93d4ce4513245890b9b786d337288b19fa79"
+    },
+    {
+      "path": "build-kit/SOURCES/php-fpm.service",
+      "sha256": "58911ad05ea7fa9448ef7bf4f3af2f834abace6607c9c7f601eb981b53ae4576"
+    },
+    {
+      "path": "build-kit/SOURCES/php-fpm.sysconfig",
+      "sha256": "87835ddbdb7747105190cb611c391ffbe77732115a0ce8ea17b1082e69b9380a"
+    },
+    {
+      "path": "build-kit/SOURCES/php-gh22186-phpt-php56-options.patch",
+      "sha256": "194d416fe8a40a07d685ff10762268dccf2e7b9018a53e14b320d9d28d5dbc5c"
+    },
+    {
+      "path": "build-kit/SOURCES/php-gh22187.patch",
+      "sha256": "c8d3cfb6c38c1d3b794a6e5a653d60f26956d8fe97d1282a6f1095b1a55b7447"
+    },
+    {
+      "path": "build-kit/SOURCES/php-ghsa-4w77-75f9-2c8w.patch",
+      "sha256": "c99985e5ac1ca7e501ace0c3461f9d826212b7c311846af0ec8d3a962b2fd3d2"
+    },
+    {
+      "path": "build-kit/SOURCES/php-mysqlnd-utf8mb4.patch",
+      "sha256": "b8f4dc32217ded477386157cab3f54d9ab00109a43336e6884aeab599345c3a6"
+    },
+    {
+      "path": "build-kit/SOURCES/php-news.patch",
+      "sha256": "3461f243f5ee90d008e8227e7786cc3a7581489fee434af628c4190d63c7edb5"
+    },
+    {
+      "path": "build-kit/SOURCES/php-openssl-cert.patch",
+      "sha256": "82f60df243d9def1343d9352b14b482d5909157964b7b0bcd3b6cb025782cfe9"
+    },
+    {
+      "path": "build-kit/SOURCES/php-sqlite3-defensive.patch",
+      "sha256": "32bf20b934722552e13a21c616dbe139877104909eee0f040428b31fca199442"
+    },
+    {
+      "path": "build-kit/SOURCES/php.conf",
+      "sha256": "6a57ceb80fe9028ce24786b364764a2e8bdf8c56f7a61ed364c1aeb16e0ca9d6"
+    },
+    {
+      "path": "build-kit/SOURCES/php.conf2",
+      "sha256": "8e93795689eb90578453273f4221b27a11b68803c6f5c6ff6bc82e24045770b9"
+    },
+    {
+      "path": "build-kit/SOURCES/php.ini",
+      "sha256": "894f51f6404aad5640f7d60444cb1013498e49e3de57345eb06448c628202076"
+    },
+    {
+      "path": "build-kit/SOURCES/php.modconf",
+      "sha256": "e0d6dd18a7373dfc8d7f8eb7d93f57407ce97ed103d0661f570718ffc856e452"
+    },
+    {
+      "path": "build-kit/SPECS/php.spec",
+      "sha256": "0fc1e0f3c80966584fb921811d74268a2f01cf39670ced616c47e7d375d36870"
+    },
+    {
+      "path": "build-kit/SOURCES/php.ztsmodconf",
+      "sha256": "0e242ffcf4c862acb2da91e6b3caf10b623b9cd75f0d121946c946effae89744"
+    },
+    {
+      "path": "build-kit/SOURCES/php56-test-certificates-2026.patch",
+      "sha256": "c9fddec882c60bc9ee05c9e0a2417a42bb669e4dc39eee854bbf9e0414f9b38a"
+    },
+    {
+      "path": "build-kit/SOURCES/strip.sh",
+      "sha256": "3bc70c035d09ae113ebcb0b6c7e644ed5b1e386a3e8eb810684db51b59976503"
+    }
+  ],
+  "source_rpm_before_release_signing_sha256": "c30d552ea6430ed63c21bea2c1810927bb0d6797c7c2c173a5c821d152f0a1fd",
+  "release_signing_fingerprint": "B07748530C39253A9E8520F56100DD2FE34B4B53"
+}

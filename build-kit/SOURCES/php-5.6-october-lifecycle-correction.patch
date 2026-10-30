@@ -1,0 +1,357 @@
+--- a/Zend/zend_API.c
++++ b/Zend/zend_API.c
+@@ -1282,7 +1282,7 @@
+ 	size_t _len = strlen(str);
+ 
+ 	if (UNEXPECTED(_len > INT_MAX)) {
+-		zend_error_noreturn(E_ERROR, "String overflow, max size is %d", INT_MAX);
++		zend_mm_safe_error_ex("String overflow, max size is %d", INT_MAX);
+ 	}
+ 
+ 	MAKE_STD_ZVAL(tmp);
+@@ -1297,7 +1297,7 @@
+ 	zval *tmp;
+ 
+ 	if (UNEXPECTED(length > INT_MAX)) {
+-		zend_error_noreturn(E_ERROR, "String overflow, max size is %d", INT_MAX);
++		zend_mm_safe_error_ex("String overflow, max size is %d", INT_MAX);
+ 	}
+ 
+ 	MAKE_STD_ZVAL(tmp);
+@@ -1374,7 +1374,7 @@
+ 	size_t _len = strlen(str);
+ 
+ 	if (UNEXPECTED(_len > INT_MAX)) {
+-		zend_error_noreturn(E_ERROR, "String overflow, max size is %d", INT_MAX);
++		zend_mm_safe_error_ex("String overflow, max size is %d", INT_MAX);
+ 	}
+ 
+ 	MAKE_STD_ZVAL(tmp);
+@@ -1389,7 +1389,7 @@
+ 	zval *tmp;
+ 
+ 	if (UNEXPECTED(length > INT_MAX)) {
+-		zend_error_noreturn(E_ERROR, "String overflow, max size is %d", INT_MAX);
++		zend_mm_safe_error_ex("String overflow, max size is %d", INT_MAX);
+ 	}
+ 
+ 	MAKE_STD_ZVAL(tmp);
+@@ -1476,7 +1476,7 @@
+ 	zval *tmp;
+ 
+ 	if (UNEXPECTED(length > INT_MAX)) {
+-		zend_error_noreturn(E_ERROR, "String overflow, max size is %d", INT_MAX);
++		zend_mm_safe_error_ex("String overflow, max size is %d", INT_MAX);
+ 	}
+ 	MAKE_STD_ZVAL(tmp);
+ 	ZVAL_STRINGL(tmp, str, length, duplicate);
+@@ -1497,7 +1497,7 @@
+ 	size_t _len = strlen(str);
+ 
+ 	if (UNEXPECTED(_len > INT_MAX)) {
+-		zend_error_noreturn(E_ERROR, "String overflow, max size is %d", INT_MAX);
++		zend_mm_safe_error_ex("String overflow, max size is %d", INT_MAX);
+ 	}
+ 
+ 	MAKE_STD_ZVAL(tmp);
+@@ -1512,7 +1512,7 @@
+ 	zval *tmp;
+ 
+ 	if (UNEXPECTED(length > INT_MAX)) {
+-		zend_error_noreturn(E_ERROR, "String overflow, max size is %d", INT_MAX);
++		zend_mm_safe_error_ex("String overflow, max size is %d", INT_MAX);
+ 	}
+ 
+ 	MAKE_STD_ZVAL(tmp);
+@@ -1697,7 +1697,7 @@
+ 	size_t _len = strlen(str);
+ 
+ 	if (UNEXPECTED(_len > INT_MAX)) {
+-		zend_error_noreturn(E_ERROR, "String overflow, max size is %d", INT_MAX);
++		zend_mm_safe_error_ex("String overflow, max size is %d", INT_MAX);
+ 	}
+ 
+ 	MAKE_STD_ZVAL(tmp);
+@@ -1719,7 +1719,7 @@
+ 	zval *z_key;
+ 
+ 	if (UNEXPECTED(length > INT_MAX)) {
+-		zend_error_noreturn(E_ERROR, "String overflow, max size is %d", INT_MAX);
++		zend_mm_safe_error_ex("String overflow, max size is %d", INT_MAX);
+ 	}
+ 
+ 	MAKE_STD_ZVAL(tmp);
+--- a/Zend/zend_API.h
++++ b/Zend/zend_API.h
+@@ -580,7 +580,7 @@
+ 		zval *__z = (z);					\
+ 		Z_STRLEN_P(__z) = strlen(__s);		\
+ 		if (UNEXPECTED(Z_STRLEN_P(__z) < 0)) { \
+-			zend_error(E_ERROR, "String size overflow"); \
++			zend_mm_safe_error_ex("String size overflow"); \
+ 		}									\
+ 		Z_STRVAL_P(__z) = (duplicate?estrndup(__s, Z_STRLEN_P(__z)):(char*)__s);\
+ 		Z_TYPE_P(__z) = IS_STRING;			\
+--- a/Zend/zend_alloc.h
++++ b/Zend/zend_alloc.h
+@@ -23,6 +23,13 @@
+ #define ZEND_ALLOC_H
+ 
+ #include <stdio.h>
++
++#ifdef HAVE_UNISTD_H
++# include <unistd.h>
++#endif
++#ifdef ZEND_WIN32
++# include <process.h>
++#endif
+ 
+ #include "../TSRM/TSRM.h"
+ #include "zend.h"
+@@ -99,7 +106,7 @@
+ 		return tmp;
+ 	}
+ 	fprintf(stderr, "Out of memory\n");
+-	exit(1);
++	_exit(1);
+ }
+ 
+ inline static void * __zend_calloc(size_t nmemb, size_t len)
+@@ -116,7 +123,7 @@
+ 		return p;
+ 	}
+ 	fprintf(stderr, "Out of memory\n");
+-	exit(1);
++	_exit(1);
+ }
+ 
+ 
+--- a/Zend/zend_execute_API.c
++++ b/Zend/zend_execute_API.c
+@@ -288,7 +288,15 @@
+ 
+ 	zend_try {
+ 		zend_objects_store_free_object_storage(&EG(objects_store) TSRMLS_CC);
+-
++	} zend_end_try();
++
++	/* An object free callback may have left an exception or caused a bailout. */
++	EG(error_handling) = EH_NORMAL;
++	EG(exception) = NULL;
++	EG(prev_exception) = NULL;
++	EG(exception_class) = NULL;
++
++	zend_try {
+ 		zend_vm_stack_destroy(TSRMLS_C);
+ 
+ 		/* Destroy all op arrays */
+@@ -327,6 +335,27 @@
+ 			FREE_HASHTABLE(EG(in_autoload));
+ 		}
+ 	} zend_end_try();
++
++	/* A bailout may interrupt cleanup. These globals can be accessed by an
++	 * INI diagnostic before init_executor() starts the next request. */
++	EG(user_error_handler) = NULL;
++	EG(user_exception_handler) = NULL;
++	memset(&EG(user_error_handlers_error_reporting), 0, sizeof(EG(user_error_handlers_error_reporting)));
++	memset(&EG(user_error_handlers), 0, sizeof(EG(user_error_handlers)));
++	memset(&EG(user_exception_handlers), 0, sizeof(EG(user_exception_handlers)));
++	EG(error_handling) = EH_NORMAL;
++	EG(exception) = NULL;
++	EG(prev_exception) = NULL;
++	EG(exception_class) = NULL;
++	EG(objects_store).object_buckets = NULL;
++	EG(objects_store).top = 1;
++	EG(in_autoload) = NULL;
++	EG(autoload_func) = NULL;
++	EG(current_execute_data) = NULL;
++	EG(active_symbol_table) = NULL;
++	EG(opline_ptr) = NULL;
++	EG(active_op_array) = NULL;
++	EG(in_execution) = 0;
+ 
+ 	zend_shutdown_fpu(TSRMLS_C);
+ 
+--- a/Zend/zend_llist.c
++++ b/Zend/zend_llist.c
+@@ -115,6 +115,8 @@
+ 		current = next;
+ 	}
+ 
++	l->head = NULL;
++	l->tail = NULL;
+ 	l->count = 0;
+ }
+ 
+--- a/Zend/zend_operators.c
++++ b/Zend/zend_operators.c
+@@ -1400,7 +1400,7 @@
+ 	char *buf;
+ 
+ 	if (UNEXPECTED(length < 0)) {
+-		zend_error(E_ERROR, "String size overflow");
++		zend_mm_safe_error_ex("String size overflow");
+ 	}
+ 
+ 	buf = str_erealloc(Z_STRVAL_P(op1), length + 1);
+@@ -1419,7 +1419,7 @@
+ 	char *buf;
+ 
+ 	if (UNEXPECTED(length < 0)) {
+-		zend_error(E_ERROR, "String size overflow");
++		zend_mm_safe_error_ex("String size overflow");
+ 	}
+ 
+ 	buf = str_erealloc(Z_STRVAL_P(op1), length + 1);
+@@ -1463,9 +1463,7 @@
+ 		uint res_len = Z_STRLEN_P(op1) + Z_STRLEN_P(op2);
+ 
+ 		if (Z_STRLEN_P(result) < 0 || (int) (Z_STRLEN_P(op1) + Z_STRLEN_P(op2)) < 0) {
+-			efree(Z_STRVAL_P(result));
+-			ZVAL_EMPTY_STRING(result);
+-			zend_error(E_ERROR, "String size overflow");
++			zend_mm_safe_error_ex("String size overflow");
+ 		}
+ 
+ 		Z_STRVAL_P(result) = safe_erealloc(Z_STRVAL_P(result), res_len, 1, 1);
+@@ -1478,7 +1476,7 @@
+ 		char *buf;
+ 
+ 		if (Z_STRLEN_P(op1) < 0 || Z_STRLEN_P(op2) < 0 || (int) (Z_STRLEN_P(op1) + Z_STRLEN_P(op2)) < 0) {
+-			zend_error(E_ERROR, "String size overflow");
++			zend_mm_safe_error_ex("String size overflow");
+ 		}
+ 		buf = (char *) safe_emalloc(length, 1, 1);
+ 
+--- a/Zend/zend_strtod.c
++++ b/Zend/zend_strtod.c
+@@ -479,7 +479,7 @@
+ 	Bigint *rv;
+ 
+ 	if (k > Kmax) {
+-		zend_error(E_ERROR, "Balloc() allocation exceeds list boundary");
++		zend_mm_safe_error_ex("Balloc() allocation exceeds list boundary");
+ 	}
+ 
+ 	_THREAD_PRIVATE_MUTEX_LOCK(dtoa_mutex);
+@@ -490,7 +490,7 @@
+ 		rv = (Bigint *)MALLOC(sizeof(Bigint) + (x-1)*sizeof(Long));
+ 		if (!rv) {
+ 			_THREAD_PRIVATE_MUTEX_UNLOCK(dtoa_mutex);
+-			zend_error(E_ERROR, "Balloc() failed to allocate memory");
++			zend_mm_safe_error_ex("Balloc() failed to allocate memory");
+ 		}
+ 		rv->k = k;
+ 		rv->maxwds = x;
+--- a/main/SAPI.c
++++ b/main/SAPI.c
+@@ -528,18 +528,23 @@
+ 	}
+ 	if (SG(request_info).auth_user) {
+ 		efree(SG(request_info).auth_user);
++		SG(request_info).auth_user = NULL;
+ 	}
+ 	if (SG(request_info).auth_password) {
+ 		efree(SG(request_info).auth_password);
++		SG(request_info).auth_password = NULL;
+ 	}
+ 	if (SG(request_info).auth_digest) {
+ 		efree(SG(request_info).auth_digest);
++		SG(request_info).auth_digest = NULL;
+ 	}
+ 	if (SG(request_info).content_type_dup) {
+ 		efree(SG(request_info).content_type_dup);
++		SG(request_info).content_type_dup = NULL;
+ 	}
+ 	if (SG(request_info).current_user) {
+ 		efree(SG(request_info).current_user);
++		SG(request_info).current_user = NULL;
+ 	}
+ 	if (sapi_module.deactivate) {
+ 		sapi_module.deactivate(TSRMLS_C);
+--- a/main/main.c
++++ b/main/main.c
+@@ -1785,6 +1785,7 @@
+ 		for (i = 0; i < NUM_TRACK_VARS; i++) {
+ 			if (PG(http_globals)[i]) {
+ 				zval_ptr_dtor(&PG(http_globals)[i]);
++				PG(http_globals)[i] = NULL;
+ 			}
+ 		}
+ 	} zend_end_try();
+@@ -1810,6 +1811,8 @@
+ 		zend_signal_deactivate(TSRMLS_C);
+ 	} zend_end_try();
+ #endif
++
++	PG(modules_activated) = 0;
+ }
+ 
+ /* }}} */
+@@ -1940,6 +1943,9 @@
+ #ifdef HAVE_DTRACE
+ 	DTRACE_REQUEST_SHUTDOWN(SAFE_FILENAME(SG(request_info).path_translated), SAFE_FILENAME(SG(request_info).request_uri), (char *)SAFE_FILENAME(SG(request_info).request_method));
+ #endif /* HAVE_DTRACE */
++
++	/* May be inspected before php_request_startup() on the next request. */
++	PG(modules_activated) = 0;
+ }
+ /* }}} */
+ 
+--- a/main/rfc1867.c
++++ b/main/rfc1867.c
+@@ -415,6 +415,8 @@
+ 		|| !strcasecmp(name, "Content-Type");
+ }
+ 
++static char *php_mime_get_hdr_value(zend_llist header, char *key);
++
+ /* parse headers */
+ static int multipart_buffer_headers(multipart_buffer *self, zend_llist *header TSRMLS_DC)
+ {
+@@ -456,12 +458,16 @@
+ 			}
+ 
+ 			*value = '\0';
+-			do { value++; } while(isspace(*value));
+-
+-			if (php_mime_should_save_hdr(line)) {
++
++			/* Keep only headers we use, and ignore duplicates. */
++			if (!php_mime_should_save_hdr(line)
++					|| php_mime_get_hdr_value(*header, line)) {
++				key = NULL;
++			} else {
+ 				key = estrdup(line);
+-			}
+-			smart_str_appends(&buf_value, value);
++				do { value++; } while (isspace((unsigned char)*value));
++				smart_str_appends(&buf_value, value);
++			}
+ 		} else if (buf_value.c) { /* If no ':' on the line, add to previous line */
+ 			smart_str_appends(&buf_value, line);
+ 		} else {
+@@ -536,11 +542,11 @@
+ 	return res;
+ }
+ 
+-static char *substring_conf(char *start, int len, char quote)
++static char *substring_conf(char *start, size_t len, char quote)
+ {
+ 	char *result = emalloc(len + 1);
+ 	char *resp = result;
+-	int i;
++	size_t i;
+ 
+ 	for (i = 0; i < len && start[i] != quote; ++i) {
+ 		if (start[i] == '\\' && (start[i + 1] == '\\' || (quote && start[i + 1] == quote))) {
+@@ -575,7 +581,7 @@
+ 		while (*strend && !isspace(*strend)) {
+ 			++strend;
+ 		}
+-		return substring_conf(str, strend - str, 0);
++		return substring_conf(str, (size_t)(strend - str), 0);
+ 	}
+ }
+ 
